@@ -404,17 +404,7 @@
     position: relative;
 }
 
-.widget-about-us .block::after{
-    position: absolute;
-    content: url(../images/about-us/svg-1.svg);
-    bottom: 15px;
-    right: 0;
-    z-index: -1;
-}
-
 /* widget-project */
-
-
 .widget-project-content {
     width: calc((100vw - ((100vw - 1400px) / 2)) - 20px);
     padding-left: calc( (100vw - 1400px) / 2 - 20px);
@@ -677,6 +667,7 @@
 }
 
 .get-quote-wrap .get-quote-content p {
+    max-width: 480px;
     font-family: 'Hind',sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -709,15 +700,135 @@
     color: #042181;
 }
 
+.get-quote-wrap .get-quote-poster {
+    width: 100%;
+    max-width: 368px;
+    margin-right: -45px;
+}
+
 .get-quote-box {
     background: #ECEFF1;
     border-radius: 28px;
     border: 1px solid #FFFFFF;
     padding: 62px 29px 73px;
     box-shadow: 16px -16px 40px rgba(255, 255, 255, 0.8), 16px 4px 64px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    max-width: 532px;
 }
 
-.widget-filter-isotope {
+
+/* tab-container */
+/* Tab Links */
+.tabs{
+    display:flex;
+  }
+  .tablinks {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1rem;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight:600;
+    transition: 0.2s ease;
+  }
+  .tablinks:hover{
+    background:blue;
+    color:#fff;
+  }
+  /* Tab active */
+  .tablinks.active {
+     background:blue;
+    color:#fff;
+  }
+  
+  /* tab content */
+  .tabcontent {
+    display: none;
+  }
+  /* Text*/
+  .tabcontent p {
+    color: #333;
+    font-size: 16px;
+  }
+  /* tab content active */
+  .tabcontent.active {
+    display: block;
+  }
+
+
+form .infor-container {
+    margin-bottom: 14px;
+}
+
+form .infor-container input {
+    font-family: 'Hind',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.5px;
+    color: #4F556A;
+    background-color: #F7F7F7;
+    padding: 12px 14px;
+}
+
+form select {
+    font-family: 'Hind',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.5px;
+    background-color: #F7F7F7;
+    color: #042181;
+    margin-bottom: 61px;
+    padding: 12px 14px;
+    opacity: 1;
+}
+
+form .range-slider {
+    margin-bottom: 33px;    
+}
+
+form .range-slider .title {
+    font-family: 'Hind',sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: #042181;
+}
+
+form .range-slider input {
+    width: 100%;
+}
+
+form .range-slider .value {
+    font-family: 'Hind',sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 19px;
+    color: #4F556A;
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form .form-submit button {
+    background-color: #042181;
+    padding: 15px 24px;
+    text-align: center;
+    width: 100%;
+}
+
+.widget-request-quote-form {
+    box-shadow: none;
+}
+
+.widget-request-quote-form form {
+    padding: 0;
+}
+
+
+/* widget-filter-isotope */
+/* .widget-filter-isotope {
     padding: 30px;
     background-color: #FFFFFF;
 }
@@ -743,80 +854,17 @@
 .widget-filter-isotope .filters-button-group button.is-checked {
     padding: 10px;
     background-color: #FFFFFF;
-
 }
 
 .widget-filter-isotope .grid .element-item {
     width: 100%;
 }
 
-.widget-filter-isotope .grid form .infor-container {
-    margin-bottom: 14px;
+.widget-filter-isotope .grid .element-item.health {
+    display: none;
 }
 
-.widget-filter-isotope .grid form .infor-container input {
-    font-family: 'Hind',sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25.5px;
-    color: #4F556A;
-    background-color: #F7F7F7;
-    padding: 12px 14px;
-}
-
-.widget-filter-isotope .grid form select {
-    font-family: 'Hind',sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25.5px;
-    background-color: #F7F7F7;
-    color: #042181;
-    margin-bottom: 61px;
-    padding: 12px 14px;
-    opacity: 1;
-}
-
-.widget-filter-isotope .grid form .range-slider {
-    margin-bottom: 33px;    
-}
-
-.widget-filter-isotope .grid form .range-slider .title {
-    font-family: 'Hind',sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 29px;
-    color: #042181;
-}
-
-.widget-filter-isotope .grid form .range-slider input {
-    width: 100%;
-}
-
-.widget-filter-isotope .grid form .range-slider .value {
-    font-family: 'Hind',sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-    color: #4F556A;
-    margin-top: 6px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.widget-filter-isotope .grid form .form-submit button {
-    background-color: #042181;
-    padding: 15px 24px;
-    text-align: center;
-    width: 100%;
-}
-
-.widget-filter-isotope .grid .widget-request-quote-form {
-    box-shadow: none;
-}
-
-.widget-filter-isotope .grid .widget-request-quote-form form {
-    padding: 0;
-}
+ */
 
 /* widget-testimonials */
 .widget-testimonial {
@@ -1889,90 +1937,78 @@
     text-align: center;
 }
 
+.widget-accordion-1,
 .widget-accordion {
-    margin-top: 60px;
     text-align: start;
     max-width: 1400px;
     margin: auto;
+    margin-top: 60px;
 }
 
+.widget-accordion-1 .accordion-items-1,
 .widget-accordion .accordion-items {
     display: flex;
     gap: 20px 40px;
 }
 
+.widget-accordion-1 .accordion-items-1 .list-1,
 .widget-accordion .accordion-items .list {
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-/* 
-
-    
-.widget-accordion .accordion-items-1,
-.widget-accordion .accordion-items {
-    width: 100%;
-	max-width: 570px;
-}
-
-.widget-accordion .accordion-heading-1,
-.widget-accordion .accordion-heading {
-    font-family: 'Cormorant Upright', serif;
-    font-size: 20px;
-    text-transform: capitalize;
-    color: #181818;
-    border-top: 1px solid rgba(24, 24, 24, 0.07);
-    line-height: 30px;
-    margin-left: 2px;
-	padding: 22px 0 20px 0;
-	cursor: pointer;
-}
-
-.widget-accordion .accordion-heading-1:first-child,
-.widget-accordion .accordion-heading:first-child {
-    border: none;
-}
-
-.widget-accordion .accordion-heading-1:hover,
-.widget-accordion .active.accordion-heading-1,
-.widget-accordion .accordion-heading:hover,
-.widget-accordion .active.accordion-heading {
-    color: #D07F7B;
-}
-
-.widget-accordion .accordion-heading-1 i,
-.widget-accordion .accordion-heading i {
-    font-size: 12px;
-    float: right;
-    line-height: 35px;
-    margin-right: 29px;
-}
-
-.widget-accordion .active-1.accordion-heading-1 i,
-.widget-accordion .active.accordion-heading i {
-	transform: rotate(-180deg);
-}
-
-.widget-accordion .accordion-content-1,
-.widget-accordion .accordion-content {
-	display: none;
-	font-family: 'Inter', sans-serif;
+.widget-accordion-1 .accordion-items-1 .list-1 .accordion-heading-1,
+.widget-accordion .accordion-items .list .accordion-heading {
+    position: relative;
+    cursor: pointer;
+    padding: 20px;
+    padding-right: 50px;
+    background-color: #F8F8F8;
+    margin-bottom: 20px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
-    color: #666666;
-    padding-bottom: 28px;
+    line-height: 22.5px;
+    color: #4F556A;
 }
 
-.widget-accordion .accordion-content-1:last-child,
-.widget-accordion .accordion-content:last-child {
-    padding-bottom: 0;
+.widget-accordion-1 .accordion-items-1 .list-1 .accordion-heading-1 span,
+.widget-accordion .accordion-items .list .accordion-heading span {
+    font-weight: 900;
+    color: #3AC19B;
 }
 
-*/
+.widget-accordion-1 .accordion-items-1 .accordion-heading-1::after,
+.widget-accordion .accordion-items .accordion-heading::after {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    content: "+";
+    font-size: 40px;
+    color: #042181;
+}
+
+.widget-accordion-1 .accordion-items-1 .accordion-heading-1.active::after,
+.widget-accordion .accordion-items .accordion-heading.active::after {
+    content: "-";
+}
+
+.widget-accordion-1 .accordion-items-1 .list-1 .accordion-content-1,
+.widget-accordion .accordion-items .list .accordion-content {
+    display: none;
+    padding: 20px;
+    padding-top: 30px;
+    border: 1px solid #EFEFEF;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-family: 'Hind',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25.5px;
+    color: #989CAA;
+}
+
+.widget-accordion-1 .accordion-items-1 .list-1 .accordion-content-1 span,
+.widget-accordion .accordion-items .list .accordion-content span {
+    font-weight: 700;
+    color: #3AC19B;
+}

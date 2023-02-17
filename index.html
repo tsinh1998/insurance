@@ -123,9 +123,6 @@
                 <a href="#" class="widget-button">Get a quote <span class="icon-arrow-right2"></span></a>
             </div>
         </div>
-        <!-- <div class="image">
-            <img src="images/page-title/home-1.jpg" alt="">
-        </div> -->
     </header>
 
     <div class="home-01 main-content">
@@ -232,8 +229,8 @@
             <div class="widget-project-slide widget-slide-style1">
                 <div class="swiper slide-type-3 ">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="widget-project-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="widget-project-item " >
                                 <div class="widget-project-item-wrap">
                                     <h3>Business Insurance</h3>
                                     <h6>Clients</h6>
@@ -242,8 +239,8 @@
                                 <span class="icon-arrow-right2"></span>
                             </div>
                         </div>  
-                        <div class="swiper-slide">
-                            <div class="widget-project-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.23s">
+                            <div class="widget-project-item " >
                                 <div class="widget-project-item-wrap">
                                     <h3>Life Insurance</h3>
                                     <h6>Clients</h6>
@@ -252,8 +249,8 @@
                                  <span class="icon-arrow-right2"></span>    
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="widget-project-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.26s">
+                            <div class="widget-project-item " >
                                 <div class="widget-project-item-wrap">
                                     <h3>Travel Insurance</h3>
                                     <h6>Clients</h6>
@@ -262,8 +259,8 @@
                                  <span class="icon-arrow-right2"></span>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="widget-project-item wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="swiper-slide wow fadeInUp" data-wow-delay="0.29s">
+                            <div class="widget-project-item " >
                                 <div class="widget-project-item-wrap">
                                     <h3>Business Insurance</h3>
                                     <h6>Clients</h6>
@@ -368,15 +365,15 @@
                     <img src="images/get-a-quote/img-01.png" alt="">
                 </div>
                 <div class="get-quote-box">
-                    <div class="widget-filter-isotope">
-                        <div class="button-group filters-button-group">
-                            <button class="button is-checked" data-filter=".home">home</button>
-                            <button class="button" data-filter=".health">health</button>
-                            <button class="button" data-filter=".vehicles">vehicles</button>
-                            <button class="button" data-filter=".life">life</button>
-                        </div>
-                        <div class="grid">
-                            <div class="element-item home" data-category="home">
+                    <div class="tab-container">
+                        <div class="tabs">
+                            <button class="tablinks active" data-electronic="home">Home</button>
+                            <button class="tablinks" data-electronic="health">Health</button>
+                            <button class="tablinks" data-electronic="vehicles">Vehicles</button>
+                            <button class="tablinks" data-electronic="life">Life</button>
+                         </div>
+                         <div class="wrapper_tabcontent">
+                            <div id="home" class="tabcontent active">
                                 <form action="#">
                                     <div class="comment-wrap-input">
                                         <div class="comment name-number">
@@ -410,7 +407,8 @@
                                     </div>
                                 </form>
                             </div>
-                            <div class="element-item health" data-category="health">
+                   
+                            <div id="health" class="tabcontent">
                                 <div class="widget-request-quote-form">
                                     <form action="#">
                                         <div class="comment-wrap-input">
@@ -442,13 +440,13 @@
                                     </form>
                                 </div>
                             </div>
-                            <div class="element-item vehicles" data-category="vehicles">
+                            <div id="vehicles" class="tabcontent">
 
                             </div>
-                            <div class="element-item life" data-category="life">
+                            <div id="life" class="tabcontent">
 
                             </div>
-                        </div>
+                         </div>
                     </div>
                 </div>
             </div>

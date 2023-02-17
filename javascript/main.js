@@ -15,6 +15,7 @@
   goTop
   counter
   filter
+  tabs
   preload
 
 */
@@ -226,6 +227,8 @@
     
         $(this).siblings().removeClass("active");
       });
+    }
+    if ( $('div').hasClass('widget-accordion-1') ) {
       $(".accordion-items-1").on("click", ".accordion-heading-1", function () {
         $(this).toggleClass("active").next().slideToggle();
     
@@ -301,6 +304,33 @@
     }
   }
 
+  var tabs = function() {
+    var tabLinks = document.querySelectorAll(".tablinks");
+    var tabContent =document.querySelectorAll(".tabcontent");
+
+    tabLinks.forEach(function(el) {
+    el.addEventListener("click", openTabs);
+    });
+
+
+    function openTabs(el) {
+        var btn = el.currentTarget; // lắng nghe sự kiện và hiển thị các element
+        var electronic = btn.dataset.electronic; // lấy giá trị trong data-electronic
+        
+        tabContent.forEach(function(el) {
+            el.classList.remove("active");
+        });
+
+        tabLinks.forEach(function(el) {
+            el.classList.remove("active");
+        });
+
+        document.querySelector("#" + electronic).classList.add("active");
+        
+        btn.classList.add("active");
+    }
+  }
+
   var preload = function() {
     $(window).on('load', function() {
       $('#preload').delay(1500).fadeOut('fast', function() {
@@ -325,8 +355,8 @@
     goTop();
     counter();
     filter();
+    tabs();
     preload();
-
   });
 
 })(jQuery);

@@ -154,6 +154,28 @@
       prevEl: '.swiper-button-prev',
     },
   
+    breakpoints: {
+      780:{
+        slidesPerView:2
+      },
+      1220: {
+        slidesPerView:3
+      },
+      1650:{
+        slidesPerView: 4,
+      }
+    }
+  
+  });}}
+
+  var swiper41 = function(){
+    if ( $('div').hasClass('swiper') ){
+  const swiper41 = new Swiper('.slide-type-41', {
+    direction: 'horizontal',
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween:0,
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -168,6 +190,40 @@
       },
       1650:{
         slidesPerView: 4,
+      }
+    }
+  
+  });}}
+
+  var swiper5 = function(){
+    if ( $('div').hasClass('swiper') ){
+  const swiper5 = new Swiper('.slide-type-5', {
+    direction: 'horizontal',
+    effect: 'slide',
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween:40,
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    breakpoints: {
+      780:{
+        slidesPerView:2
+      },
+      1220: {
+        slidesPerView:4
+      },
+      1650:{
+        slidesPerView: 5,
       }
     }
   
@@ -312,10 +368,9 @@
     el.addEventListener("click", openTabs);
     });
 
-
     function openTabs(el) {
-        var btn = el.currentTarget; // lắng nghe sự kiện và hiển thị các element
-        var electronic = btn.dataset.electronic; // lấy giá trị trong data-electronic
+        var btn = el.currentTarget; 
+        var electronic = btn.dataset.electronic; 
         
         tabContent.forEach(function(el) {
             el.classList.remove("active");
@@ -328,6 +383,34 @@
         document.querySelector("#" + electronic).classList.add("active");
         
         btn.classList.add("active");
+    }
+  }
+
+  var ranger = function () {
+    const range = document.getElementById('range')
+
+    range.addEventListener('input', (e) => {
+      const value = +e.target.value
+      const label = e.target.nextElementSibling
+
+      const range_width = getComputedStyle(e.target).getPropertyValue('width')
+      const label_width = getComputedStyle(label).getPropertyValue('width')
+
+      const num_width = +range_width.substring(0, range_width.length - 2)
+      const num_label_width = +label_width.substring(0, label_width.length - 2)
+
+      const max = +e.target.max
+      const min = +e.target.min
+
+      const left = value * (num_width / max) - num_label_width / 2 + scale(value, min, max, 10, -10)
+      label.style.left = `${left}px`
+
+      
+      label.innerHTML = value
+    })
+
+    const scale = (num, in_min, in_max, out_min, out_max) => {
+      return  (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
   }
 
@@ -349,6 +432,8 @@
     swiper2();
     swiper3();
     swiper4();
+    swiper41();
+    swiper5();
     partners();
     gallery();
     accordion();
@@ -356,6 +441,7 @@
     counter();
     filter();
     tabs();
+    ranger();
     preload();
   });
 

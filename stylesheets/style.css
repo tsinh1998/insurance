@@ -637,10 +637,10 @@ color: #a0a0a0;
 
 .footer-content .service ul li {
     width: 205px;
-    /* width: 50%; */
     padding-left: 21px;
     margin-bottom: 14px;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
 .footer-content .service ul li::before {
@@ -657,6 +657,14 @@ color: #a0a0a0;
     font-size: 16px;
     line-height: 22.5px;
     color: #fff;
+}
+
+.footer-content .service ul li:hover {
+    padding-left: 28px;
+}
+
+.footer-content .service ul li:hover a {
+    color: #C0F8E8;
 }
 
 .footer-content .comment-respond {
@@ -682,11 +690,20 @@ color: #a0a0a0;
     margin-bottom: 12px;
 }
 
+.footer-content form .select select {
+    cursor: pointer;
+    opacity: 1;
+}
+
 .footer-content form button {
     width: 100%;
     padding: 15px 24px;
     background: #C0F8E8;
     color: #042181;
+}
+
+.footer-content form button:hover {
+    background-color: #fff;
 }
 
 .footer-bottom {
@@ -721,13 +738,13 @@ color: #a0a0a0;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 19px;
     height: 38px;
-}
-
-.widget-social a span::before {
     color: #FFFFFF;
 }
 
-
+.widget-social a:hover {
+    color: #042181;
+    background-color: #FFFFFF;
+}
 
 /* Page-title
 ----------------------------------------------- */
@@ -1547,10 +1564,14 @@ color: #a0a0a0;
     border: none;
 }
 
-.widget-newsletter form button  {
+.widget-newsletter form button {
     font-size: 17px;
     padding: 0;
     margin-left: 10px;
+}
+
+.widget-newsletter form button:hover .icon-sent:before {
+    color: #3AC19B;
 }
 
 /* blog-detail-no-sidebar
@@ -1622,20 +1643,47 @@ color: #a0a0a0;
 
 /* home-1
 -------------------------------------------- */
-
-
-/* partners
-------------------------- */
 .partners {
     width: 100%;
     padding: 20px 40px;
     background-color: #F8F8F8;
 }
 
-/* widget-testimonial */
+.home-01 .widget-service {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.home-01 .widget-about-us {
+    margin-bottom: 116px;
+}
+
+.home-01 .widget-choose-us,
+.home-01 .widget-project {
+    margin-bottom: 100px;
+}
+
+.home-01 .widget-counter {
+    margin-bottom: -170px;
+}
+
 .home-01 .widget-testimonial .widget-testimonial-wrap {
     max-width: unset;
     margin-top: 110px;
+    margin-bottom: 70px;
+    text-align: start;
+}
+
+.home-01 .widget-testimonial .widget-testimonial-wrap .swiper {
+    margin: 0 -230px;
+}
+
+.home-01 .widget-testimonial .widget-testimonial-wrap .swiper-slide {
+    margin-bottom: 30px;
+}
+
+.home-01 .widget-testimonial .widget-testimonial-wrap .widget-testimonial-item {
+    margin-top: 50px;
 }
 
 
@@ -1686,23 +1734,43 @@ color: #a0a0a0;
     margin-bottom: 18px;
 }
 
-/* widget-sevice */
-
-/* widget-get-quote */
 .home-02 .widget-get-quote {
-    background-color: #FFFFFF;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.07);
     background-image: none;
     max-width: 1400px;
     margin: auto;
+    border-radius: 100px 0 0 0;
+    margin-bottom: 100px;
 }
 
 .home-02 .widget-get-quote .get-quote-wrap {
     padding: 0;
+    align-items: flex-end;
 }
 
 .home-02 .widget-get-quote .get-quote-box {
+    position: unset;
     box-shadow: none;
+    padding: 80px 50px 85px 78px;
+    max-width: 600px;
+    background: none;
+    border: none;
 }
+
+
+
+.home-02 .get-quote-wrap .get-quote-content {
+    padding-top: 80px;
+    padding-bottom: 135px;
+}
+
+.home-02 .get-quote-wrap .get-quote-poster {
+    margin: 0;
+    margin-left: -35px;
+}
+
+
 
 /* widget-choose-us */
 .home-02 .widget-choose-us {
@@ -2775,3 +2843,51 @@ color: #a0a0a0;
     background-image: url(../images/page-title/service-grid.jpg);
 }
 
+.services-grid .widget-service-list {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.services-grid .widget-service-list-wrap {
+    margin-top: 60px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.services-grid .widget-service-list-wrap .widget-post {
+    width: 100%;
+    max-width: 22.85%;
+    flex-wrap: wrap;
+}
+
+.services-grid .widget-service-list-wrap .widget-post .image {
+    border-bottom: 4px solid #C0F8E8;
+    border-radius: 0 60px 0 0;
+    overflow: hidden;
+}
+
+.services-grid .widget-service-list-wrap .widget-post .all-content {
+    padding: 20px;
+    width: 100%;
+    text-align: start;
+    background-color: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.services-grid .widget-service-list.style1 {
+    max-width: unset;
+    background-image: url(../images/services/background.jpg);
+}
+
+.services-grid .widget-service-list.style1 .widget-service-list-inner {
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 0;
+}
+
+.services-grid .widget-service-list.style1 .main-title {
+    color: #FFFFFF;
+}

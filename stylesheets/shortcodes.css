@@ -2211,10 +2211,17 @@ display: block;
 }
 
 .widget-job .widget-job-item .tag a {
-    width: 74px;
     padding: 6px 10px;
     margin-right: 9px;
     background-color: #C0F8E8;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.widget-job .widget-job-item .tag a:hover {
+    color: #C0F8E8;
+    background-color: #042181;
 }
 
 .widget-job .widget-job-item .apply {

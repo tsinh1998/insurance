@@ -925,6 +925,101 @@ color: #a0a0a0;
     color: #042181;
 }
 
+.ride-sidebar .quick-quote {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.ride-sidebar .quick-quote .text {
+    font-family: "Hind",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.5px;
+    color: #4F556A;
+    margin-bottom: 10px;
+}
+
+.ride-sidebar .quick-quote input {
+    border: 1px solid #E2E2E2;
+    margin-bottom: 20px;
+}
+
+.ride-sidebar .quick-quote .email-number {
+    display: flex;
+    gap: 20px;
+}
+
+.ride-sidebar .quick-quote select {
+    color: #042181;
+    border: 1px solid #E2E2E2;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    padding: 16px 20px;
+}
+
+.ride-sidebar .quick-quote textarea {
+    border: 1px solid #E2E2E2;
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    height: 140px;
+}
+
+.ride-sidebar .quick-quote button {
+    color: #C0F8E8;
+    background-color: #042181;
+    padding: 15px 24px;
+    line-height: 18px;
+}
+
+.ride-sidebar .location {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+}
+
+.ride-sidebar .location .phone,
+.ride-sidebar .location .address {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #F0F0F0;
+    margin-bottom: 25px;
+}
+
+.ride-sidebar .location .address p {
+    color: #4F556A;
+}
+
+.ride-sidebar .location .mail p,
+.ride-sidebar .location .phone p {
+    color: #042181;
+}
+
+.ride-sidebar .service-quote {
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    padding: 30px;
+}
+
+.ride-sidebar .service-quote p {
+    color: #4F556A;
+    margin-bottom: 16px;
+}
+
+.ride-sidebar .service-quote .file-item {
+    margin-bottom: 10px;
+}
+
+.ride-sidebar .service-quote .file-item:last-child {
+    margin-top: 0;
+}
+
+.ride-sidebar.style-1 .ride-sidebar-block {
+    margin-bottom: 40px;
+}
+
 /* main-content-wrap */
 .blog .main-content-wrap {
     border-right: 1px solid #EFEFEF;
@@ -1551,6 +1646,7 @@ color: #a0a0a0;
     align-items: center;
     padding: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    background-color: #FFFFFF;
 }
 
 .widget-newsletter form .comment-wrap-input {
@@ -1738,7 +1834,7 @@ color: #a0a0a0;
     margin-bottom: 18px;
 }
 
-.home-02 .widget-get-quote {
+.widget-get-quote.style-1 {
     background: #FFFFFF;
     box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.07);
     background-image: none;
@@ -1749,12 +1845,12 @@ color: #a0a0a0;
     z-index: 50;
 }
 
-.home-02 .widget-get-quote .get-quote-wrap {
+.widget-get-quote.style-1 .get-quote-wrap {
     padding: 0;
     align-items: flex-end;
 }
 
-.home-02 .widget-get-quote .get-quote-box {
+.widget-get-quote.style-1 .get-quote-box {
     position: unset;
     box-shadow: none;
     padding: 80px 50px 85px 78px;
@@ -1763,14 +1859,29 @@ color: #a0a0a0;
     border: none;
 }
 
+.widget-get-quote.style-1 .get-quote-box .tabs {
+    background-color: #FFFFFF;
+    gap: 0;
+}
 
+.widget-get-quote.style-1 .get-quote-box .tabs button {
+    width: 100px;
+    box-shadow: none;
+    border-bottom: 1px solid #EFEFEF;
+}
 
-.home-02 .get-quote-wrap .get-quote-content {
+.widget-get-quote.style-1 .get-quote-box .tabs button.active,
+.widget-get-quote.style-1 .get-quote-box .tabs button:hover {
+    color: #3AC19B;
+    border-bottom: 1px solid #3AC19B;
+}
+
+.widget-get-quote.style-1 .get-quote-wrap .get-quote-content {
     padding-top: 80px;
     padding-bottom: 135px;
 }
 
-.home-02 .get-quote-wrap .get-quote-poster {
+.widget-get-quote.style-1 .get-quote-wrap .get-quote-poster {
     margin: 0;
     margin-left: -35px;
 }
@@ -2170,48 +2281,50 @@ color: #a0a0a0;
     border-radius: 100px 0 0 0;
 }
 
-.home-03 .widget-project-1 .widget-project-1-content > p {
-    margin-bottom: 60px;
-}
-
-.home-03 .widget-get-quote .get-quote-wrap {
+.widget-get-quote.style-2 .get-quote-wrap {
     padding: 0;
     margin-bottom: 100px;
 }
 
-.home-03 .widget-get-quote .get-quote-wrap .get-quote-content {
+.widget-get-quote.style-2 .get-quote-wrap .get-quote-content {
     padding-top: 100px;
     margin-right: -100px;
 }
 
-.home-03 .widget-get-quote .get-quote-wrap .get-quote-content p {
+.widget-get-quote.style-2 .get-quote-wrap .get-quote-content p {
     max-width: 450px;
 }
 
-.home-03 .widget-get-quote .get-quote-wrap .get-quote-poster {
+.widget-get-quote.style-2 .get-quote-wrap .get-quote-poster {
     max-width: 514px;
     padding-top: 28px;
 }
 
-.home-03 .widget-get-quote .get-quote-box {
+.widget-get-quote.style-2 .get-quote-box {
     top: 100px;
     padding: 0;
     border-radius: 0;
 }
 
-.home-03 .widget-get-quote .get-quote-box .tab-container .tabs {
+.widget-get-quote.style-2 .get-quote-box .tab-container .tabs {
     background-color: #FFFFFF;
     gap: 0;
 }
 
-.home-03 .widget-get-quote .get-quote-box .tab-container .tabs button {
+.widget-get-quote.style-2 .get-quote-box .tab-container .tabs button {
     width: 100px;
     box-shadow: none;
     border-bottom: 1px solid #EFEFEF;
 }
 
-.home-03 .widget-get-quote .get-quote-box .tab-container .tabs button.active {
+.widget-get-quote.style-2 .get-quote-box .tab-container .tabs button:hover,
+.widget-get-quote.style-2 .get-quote-box .tab-container .tabs button.active {
+    color: #3AC19B;
     border-bottom: 1px solid #3AC19B;
+}
+
+.home-03 .widget-project-1 .widget-project-1-content > p {
+    margin-bottom: 60px;
 }
 
 .home-03 .widget-project-1 .widget-project-1-item {
@@ -2771,7 +2884,7 @@ color: #a0a0a0;
     background-image: url(../images/page-title/faq.jpg);
 }
 
-.faqs .widget-faq form {
+.widget-block-search-1 {
     width: 100%;
     max-width: 680px;
     margin: auto;
@@ -2779,23 +2892,25 @@ color: #a0a0a0;
     margin-bottom: 30px;
 }
 
-.faqs .widget-faq form .widget-block-search-1-wrap {
+.widget-block-search-1 .widget-block-search-1-wrap {
     display: flex;
     background: #FFFFFF;
     border: 1px solid #EFEFEF;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.faqs .widget-faq form .widget-block-search-1-wrap button {
+.widget-block-search-1 .widget-block-search-1-wrap button {
     padding-left: 15px;
     color: #4F556A ;
     font-size: 18px;
 }
 
-.faqs .widget-faq form .widget-block-search-1-wrap input {
+.widget-block-search-1 .widget-block-search-1-wrap input {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
+    color: #4F556A;
+    opacity: 1;
 }
 
 .faqs .widget-faq p span.text {
@@ -2893,6 +3008,44 @@ color: #a0a0a0;
     color: #4F556A;
     margin-top: 24px;
     margin-bottom: 60px;
+}
+
+.widget-filters {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.widget-filters form {
+    width: 100%;
+    margin: 0;
+    max-width: unset;
+}
+
+.widget-filters .select {
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.widget-filters .select img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.widget-filters .select select {
+    font-family: 'Hind',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #4F556A;
+    opacity: 1;
+    padding-left: 54px;
 }
 
 .career .widget-job .widget-blog-pagination {
@@ -3124,6 +3277,10 @@ color: #a0a0a0;
     background-color: #042181;
 }
 
+.services-list .widget-get-quote {
+    background-color: #F5F5F5;
+}
+
 /* services grid
 -------------------------------------------- */
 .services-grid .page-title {
@@ -3178,3 +3335,20 @@ color: #a0a0a0;
 .services-grid .widget-service-list.style1 .main-title {
     color: #FFFFFF;
 }
+
+/* services grid-1
+-------------------------------------------- */
+.services-grid-1 .widget-our-service {
+    margin-bottom: 60px;
+}
+
+.services-grid-1 .widget-our-service-item {
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-shadow: inset 0px -4px 0px #042181;
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+/* services detail
+-------------------------------------------- */

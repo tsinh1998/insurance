@@ -19,12 +19,6 @@
     max-width:1440px;
 }
 
-@media only screen and (max-width: 1024px){
-    .tf-container{
-        width:100%
-    }
-}
-
 .tf-container .row {
     margin-right: -20px;
     margin-left: -20px;
@@ -2206,7 +2200,7 @@ display: block;
     margin-left: 24px;
 }
 
-.widget-job .widget-job-item img {
+.widget-job .widget-job-item img:first-child {
     margin-left: 0;
 }
 
@@ -2317,4 +2311,68 @@ display: block;
 .widget-accordion .accordion-items .list .accordion-content span {
     font-weight: 700;
     color: #3AC19B;
+}
+
+/* widget-business-insurance */
+.widget-business-insurance {
+    margin-bottom: 100px;
+}
+
+.widget-business-insurance-content {
+    text-align: center;
+    padding: 100px 0 305px 0;
+    background-image: url(../images/business-insurance/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -245px;
+}
+
+.widget-business-insurance-content .sub-title {
+    text-transform: uppercase;
+}
+
+.widget-business-insurance-slide {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.widget-business-insurance .swiper {
+    padding-bottom: 53px;
+}
+
+.widget-business-insurance .widget-swiper-pagination .swiper-pagination {
+    bottom: 0;
+    top: auto;
+    margin: auto;
+    width: 100%;
+}
+
+.widget-business-insurance-item {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.widget-business-insurance-item .poster {
+    margin-bottom: -58px;
+}
+
+.widget-business-insurance-item-content h4 {
+    margin-top: 20px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 28px;
+    color: #042181;
+    margin-bottom: 14px;
+}
+
+.widget-business-insurance-item-content p {
+    font-family: 'Hind',sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #4F556A;
+    margin-bottom: 20px;
 }

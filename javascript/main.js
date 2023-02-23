@@ -178,6 +178,7 @@
     effect: 'slide',
     slidesPerView: 1,
     spaceBetween:40,
+    loop: true,
 
     navigation: {
       nextEl: '.swiper-button-next',
@@ -205,6 +206,7 @@
     effect: 'slide',
     slidesPerView: 1,
     spaceBetween:0,
+    loop: true,
 
     navigation: {
       nextEl: '.swiper-button-next',
@@ -272,6 +274,33 @@
       },
       1170:{
         slidesPerView: 8,
+      }
+    }
+  
+  });}}
+
+  var swiper6 = function(){
+    if ( $('div').hasClass('swiper') ){
+  const swiper6 = new Swiper('.slide-type-6', {
+    direction: 'horizontal',
+    effect: 'slide',
+    slidesPerView: 1,
+    spaceBetween:40,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  
+    breakpoints: {
+      780:{
+        slidesPerView:2
+      },
+      1220: {
+        slidesPerView:3
+      },
+      1650:{
+        slidesPerView: 4,
       }
     }
   
@@ -464,6 +493,7 @@
     swiper4();
     swiper41();
     swiper5();
+    swiper6();
     partners();
     gallery();
     accordion();

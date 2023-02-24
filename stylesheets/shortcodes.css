@@ -127,6 +127,7 @@
     margin-right: 26px;
 }
 
+.widget-blog-pagination .flat-pagination li:hover a,
 .widget-blog-pagination .flat-pagination li.active a,
 .widget-blog-pagination .last a {
     color: #042181;
@@ -135,8 +136,8 @@
 /* page-title-home1 */
 .page-title-home1 {
     background-image: url(../images/page-title/pt.png);
-    background-position: 90% 80px;
-    background-repeat: no-repeat;
+    background-position: 16 80px;
+    background-repeat: no-16peat;
 }
 
 .page-title-home1 .content {
@@ -601,7 +602,6 @@
     font-weight: 900;
     font-size: 30px;
     line-height: 35px;
-    margin-top: 20px;
     margin-bottom: 16px;
 }
 
@@ -1780,10 +1780,7 @@ display: block;
 /* widget-blog-update */
 .home-02 .widget-blog-update {
     text-align: start;
-}
-
-.home-02 .widget-blog-update .widget-blog-update-wrap {
-    margin-top: 60px;
+    margin-bottom: 100px;
 }
 
 .home-02 .widget-blog-update .widget-post {
@@ -1861,7 +1858,6 @@ display: block;
     margin: auto;
     display: flex;
     gap: 40px;
-    margin-top: 60px;
 }
 
 .widget-services-we-offer-item {
@@ -1932,7 +1928,6 @@ display: block;
     width: 100%;
     max-width: 1040px;
     margin: auto;
-    margin-top: 60px;
     display: flex;
     gap: 40px;
 }
@@ -2128,6 +2123,11 @@ display: block;
     background-color: #042181;
 }
 
+.widget-request-quote-form form button:hover {
+    color: #042181;
+    background-color: #C0F8E8;
+}
+
 .widget-request-quote-form .form-content {
     padding: 40px 0 0 40px;
     display: flex;
@@ -2174,8 +2174,7 @@ display: block;
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    margin-top: 60px;
-    display: flex;
+        display: flex;
     gap: 40px;
     text-align: start;
     flex-wrap: wrap;
@@ -2243,6 +2242,32 @@ display: block;
     border-radius: 20px 0px 0px 0px;
 }
 
+.widget-job .widget-job-item .apply span {
+    margin-right: 10px;
+}
+
+/* .widget-job .widget-job-item .apply a:hover,
+.widget-job .widget-job-item .apply a:hover span::before {
+    color: #fff;
+} */
+
+.widget-job .widget-job-item:hover {
+    background-color: #042181;
+}
+
+.widget-job .widget-job-item:hover .infor,
+.widget-job .widget-job-item:hover .heading {
+    color: #FFFFFF;
+}
+
+.widget-job .widget-job-item:hover .apply {
+    background-color: #C0F8E8;
+}
+
+.widget-job .widget-job-item:hover .tag a {
+    border: 1px solid #C0F8E8;
+}
+
 /* widget-faq */
 .widget-faq {
     text-align: center;
@@ -2253,7 +2278,6 @@ display: block;
     text-align: start;
     max-width: 1400px;
     margin: auto;
-    margin-top: 60px;
 }
 
 .widget-accordion-1 .accordion-items-1,
@@ -2492,3 +2516,65 @@ display: block;
     background-color: #042181;
     border-radius: 22px;
 }
+
+/* widget-checkbox-sale */
+.widget-checkbox-sale {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+} 
+
+.widget-checkbox-sale .sale {
+    font-family: 'Hind',sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3AC19B;
+}
+
+
+/* 
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+    margin: auto;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 36px;
+	height: 20px;
+	background: grey;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	background: #3AC19B;
+	border-radius: 8px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #C0F8E8;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 8px;
+} */

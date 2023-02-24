@@ -297,10 +297,10 @@
         slidesPerView:2
       },
       1220: {
-        slidesPerView:3
+        slidesPerView:4
       },
       1650:{
-        slidesPerView: 4,
+        slidesPerView: 6,
       }
     }
   

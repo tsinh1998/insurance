@@ -28,11 +28,11 @@
         $(window).on('load scroll', function(){                
           if ($(window).scrollTop() >= 100) {
             $('.sub-header').addClass('hide');
-            $('.header-home-03').addClass('background-white');
+            $('.header-home-03').addClass('background-black');
         }
         else {
             $('.sub-header').removeClass('hide');
-            $('.header-home-03').removeClass('background-white');
+            $('.header-home-03').removeClass('background-black');
         }
         })            
   }
@@ -178,7 +178,7 @@
     effect: 'slide',
     slidesPerView: 1,
     spaceBetween:40,
-    loop: true,
+    loop: true, 
 
     navigation: {
       nextEl: '.swiper-button-next',

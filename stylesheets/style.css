@@ -391,7 +391,7 @@ color: #a0a0a0;
     line-height: 74px;
 }
 
-#menu-primary-menu li a {
+#menu-primary-menu > li > a {
     color: #042181;
 }
 
@@ -417,13 +417,59 @@ color: #a0a0a0;
     font-size: 5px;
 }
 
+#mainnav ul.sub-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0px;
+    top: 80%;
+    padding: 30px;
+    border-top: 4px solid #C0F8E8;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    transition: ease-out 0.3s;
+    z-index: 20;
+}
 
+#mainnav ul.menu > li:hover ul.sub-menu {
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
 
+.mainnav ul.sub-menu li {
+    min-width: 164px;
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+.mainnav ul.sub-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.mainnav ul.sub-menu li a {
+    color: #4F556A;
+}
+
+.mainnav ul.sub-menu li.current-item a,
+.mainnav ul.sub-menu li:hover a {
+    color: #042181;
+}
+
+#mainnav .megamenu ul.sub-menu {
+    display: flex;
+    max-width: 1400px;
+}
 
 /* header-ct-right */
 .header-ct-right {
     padding-right: 100px;
     gap: 30px;
+    align-items: center;
 }
 
 .show-search {
@@ -437,26 +483,46 @@ color: #a0a0a0;
     color: #042181;
 }
 
-/* .show-search .top-search {
+/* show-search */
+.show-search {
+    position: relative;
+}
+
+.show-search .icon-show-search {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #181818;
+    text-align: center;
+    line-height: 70px;
+}
+
+.show-search .top-search {
     position: absolute;
     right: 0;
     top: 100%;
-    width: 224px;
+    width: 300px;
     display: none;
     box-shadow: 6px 6px 6px rgb(0 0 0 / 6%);
 }
 
 .show-search .top-search .input-group {
-    display: flex;
+    background-color: #181818;
+    flex-wrap: nowrap;
 }
 
 .show-search .top-search input {
     border: transparent;
+    border-bottom: 1px solid rgba(155, 155, 155, 0.1);
+    background: none;
+    padding-left: 15px;
 }
 
 .show-search .top-search button {
     border: none;
-} */
+    background: none;
+    color: #FFFFFF;
+    padding: 0 10px;
+}
 
 .header-ct-right .header-btn .widget-button {
     padding: 15px 24px;
@@ -3091,11 +3157,11 @@ color: #a0a0a0;
 
 /* Career
 -----------------------------------*/
-.career .page-title {
+.carers .page-title {
     background-image: url(../images/page-title/carrer.jpg);
 }
 
-.career .widget-job > p {
+.carers .widget-job > p {
     max-width: 540px;
     margin: auto;
     font-family: 'Hind',sans-serif;
@@ -3146,13 +3212,13 @@ color: #a0a0a0;
     padding-left: 54px;
 }
 
-.career .widget-job .widget-blog-pagination {
+.carers .widget-job .widget-blog-pagination {
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 100px;
 }
 
-.career .widget-join-team {
+.carers .widget-join-team {
     padding-top: 100px;
     background-color: #042181;
     background-image: url(../images/join-team/Icon.png);
@@ -3160,23 +3226,23 @@ color: #a0a0a0;
     background-position: 81.45% 141px;
 }
 
-.career .widget-join-team-wrap {
+.carers .widget-join-team-wrap {
     max-width: 1400px;
     margin: auto;
 }
 
-.career .widget-join-team-wrap .main-title {
+.carers .widget-join-team-wrap .main-title {
     color: #FFFFFF;
     max-width: 920px;
     margin-left: 0;
 }
 
-.career .widget-join-team-box {
+.carers .widget-join-team-box {
     display: flex;
     align-items: flex-end;
 }
 
-.career .widget-join-team-box .image {
+.carers .widget-join-team-box .image {
     margin-bottom: -167px;
     width: 100%;
     margin-right: -220px;
@@ -3186,7 +3252,7 @@ color: #a0a0a0;
     z-index: 0;
 }
 
-.career .widget-join-team-box .image::after {
+.carers .widget-join-team-box .image::after {
     position: absolute;
     content: "";
     bottom: 0;
@@ -3196,7 +3262,7 @@ color: #a0a0a0;
     background: linear-gradient(0deg, #042181 0%, rgba(4, 33, 129, 0) 100%);
 }
 
-.career .widget-join-team-box .content {
+.carers .widget-join-team-box .content {
     max-width: 680px;
     background: #FFFFFF;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -3206,7 +3272,7 @@ color: #a0a0a0;
     margin-bottom: -167px;
 }
 
-.career .widget-join-team-box .content .text {
+.carers .widget-join-team-box .content .text {
     font-family: 'Raleway',sans-serif;
     font-weight: 900;
     font-size: 30px;
@@ -3215,7 +3281,7 @@ color: #a0a0a0;
     margin-bottom: 20px;
 }
 
-.career .widget-join-team-box .content p {
+.carers .widget-join-team-box .content p {
     font-family: 'Hind',sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -3224,18 +3290,18 @@ color: #a0a0a0;
     margin-top: 14px;
 }
 
-.career .widget-benifit {
+.carers .widget-benifit {
     margin-top: 267px;
     text-align: center;
 }
 
-.career .widget-benifit .widget-choose-us-wrap {
+.carers .widget-benifit .widget-choose-us-wrap {
     flex-wrap: nowrap;
     max-width: 1400px;
     margin: auto;
 }
 
-.career .widget-benifit .widget-choose-us-item {
+.carers .widget-benifit .widget-choose-us-item {
     position: relative;
     flex-wrap: wrap;
     background: #FFFFFF;
@@ -3245,7 +3311,7 @@ color: #a0a0a0;
     overflow: hidden;
 }
 
-.career .widget-benifit .widget-choose-us-item::after {
+.carers .widget-benifit .widget-choose-us-item::after {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -3263,27 +3329,27 @@ color: #a0a0a0;
     stroke: #042181;
 }
 
-.career .widget-benifit .widget-choose-us-item.choose-us-item-1::after {
+.carers .widget-benifit .widget-choose-us-item.choose-us-item-1::after {
     content: "01";
     z-index: 5;
 }
 
-.career .widget-benifit .widget-choose-us-item.choose-us-item-2::after {
+.carers .widget-benifit .widget-choose-us-item.choose-us-item-2::after {
     content: "02";
     z-index: 5;
 }
 
-.career .widget-benifit .widget-choose-us-item.choose-us-item-3::after {
+.carers .widget-benifit .widget-choose-us-item.choose-us-item-3::after {
     content: "03";
     z-index: 5;
 }
 
-.career .widget-benifit .widget-choose-us-item.choose-us-item-4::after {
+.carers .widget-benifit .widget-choose-us-item.choose-us-item-4::after {
     content: "04";
     z-index: 5;
 }
 
-.career .widget-benifit .widget-choose-us-item .text a:hover {
+.carers .widget-benifit .widget-choose-us-item .text a:hover {
     color: #36a7e3;
 }
 

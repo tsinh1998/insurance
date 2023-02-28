@@ -63,7 +63,7 @@
 	bottom: 50px;
 	width: 50px;
 	height: 50px;
-	background-color: #D07F7B;
+	background-color: #042181;
 	cursor: pointer;
 	line-height: 50px;
 	text-align: center;
@@ -80,7 +80,7 @@
 	z-index: 9999;
 }
 
-.go-top i {
+.go-top span {
 	font-size: 18px;
 	color: #fff;
 	font-weight: 600;
@@ -91,9 +91,10 @@
 	height: 100%;
 	line-height: 50px;
 	transition: all ease 0.3s;
+    transform: rotate(180deg);
 }
 
-.go-top:hover i {
+.go-top:hover span {
 	color: #181818;
 	animation: 1s tf-buzz-out alternate linear infinite;
 }
@@ -450,6 +451,8 @@
     padding: 24px 25px;
     background-image: url(../images/project/img-01.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 

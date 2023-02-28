@@ -335,8 +335,9 @@ color: #a0a0a0;
 ------------------------------------------------------ */
 #header {
     width: 100%;
-    /* position: fixed; */
+    position: fixed;
     top: 0%;
+    background-color: #FFFFFF;
     z-index: 100;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -2142,11 +2143,11 @@ color: #a0a0a0;
 ------------------------------------------- */
 /* header */
 .header-home-03 {
-    position: fixed;
+    background-color: transparent !important;
 }
 
 .header-home-03.background-black {
-    background-color: #181818;
+    background-color: #181818 !important;
 }
 
 .header-home-03 .sub-header {
@@ -2162,11 +2163,12 @@ color: #a0a0a0;
 .header-home-03 .sub-header .info .gmail,
 .header-home-03 .sub-header .info .hotline,
 .header-home-03 .sub-header .address,
-.header-home-03 #menu-primary-menu li a,
+.header-home-03 #menu-primary-menu > li > a,
 .header-home-03 #menu-primary-menu > li > a span::before {
     color: #FFFFFF;
 }
 
+.header-home-03 .header-ct-right .header-btn .widget-button span::before,
 .header-home-03 .header-ct-right .header-btn .widget-button {
     color: #042181;
     background-color: #C0F8E8;
@@ -2177,16 +2179,10 @@ color: #a0a0a0;
     background-color: #042181;
 }
 
-.header-home-03 .header-ct-right .header-btn .widget-button span::before {
-    color: #042181;
-    background-color: #C0F8E8;
-}
-
 .header-home-03 .header-ct-right .header-btn .widget-button:hover span::before {
     color: #C0F8E8;
     background-color: transparent;
 }
-
 
 /* main-content */
 .home-03.main-content {

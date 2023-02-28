@@ -8,14 +8,17 @@
   swiper1
   swiper2
   swiper3
+  swiper31
   swiper4
+  swiper41
   swiper5
-  gallery
+  swiper6
+  partners
   accordion
   goTop
   counter
-  filter
   tabs
+  ranger
   preload
 
 */
@@ -306,32 +309,6 @@
   
   });}}
 
-  var gallery = function(){
-    if ( $('div').hasClass('widget-adv-video') ){
-  var slider = new Swiper ('.gallery-slider', {
-    slidesPerView: 1,
-    centeredSlides: true,
-    loop: true,
-    loopedSlides: 6,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-  });
-  
-  var thumbs = new Swiper ('.gallery-thumbs', {
-    slidesPerView: 'auto',
-    spaceBetween: 30,
-    loop: true,
-    slideToClickedSlide: true,
-    
-    
-  });
-    slider.controller.control = thumbs;
-    thumbs.controller.control = slider;
-  }
-  }
-
   var accordion = function() {
     if ( $('div').hasClass('widget-accordion') ) {
       $(".accordion-items").on("click", ".accordion-heading", function () {
@@ -394,30 +371,6 @@
     }
   };
 
-  var filter = function() {
-    if ($('div').hasClass("widget-filter-isotope")) {
-      var $grid = $(".grid").isotope(
-        {
-        itemSelector: ".element-item",
-        layoutMode: "fitRows"
-      }
-      );
-     
-      $(".filters-button-group").on("click", "button", function () {
-        var filterValue = $(this).attr("data-filter");
-        $grid.isotope({ filter: filterValue });
-      });
-      
-      $(".button-group").each(function (i, buttonGroup) {
-        var $buttonGroup = $(buttonGroup);
-        $buttonGroup.on("click", "button", function () {
-          $buttonGroup.find(".is-checked").removeClass("is-checked");
-          $(this).addClass("is-checked");
-        });
-      });
-    }
-  }
-
   var tabs = function() {
     var tabLinks = document.querySelectorAll(".tablinks");
     var tabContent =document.querySelectorAll(".tabcontent");
@@ -445,6 +398,7 @@
   }
 
   var ranger = function () {
+    if ($('div').hasClass("range-container")) {
     const range = document.getElementById('range')
 
     range.addEventListener('input', (e) => {
@@ -471,6 +425,7 @@
       return  (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
     }
   }
+  }
 
   var preload = function() {
     $(window).on('load', function() {
@@ -495,11 +450,9 @@
     swiper5();
     swiper6();
     partners();
-    gallery();
     accordion();
     goTop();
     counter();
-    filter();
     tabs();
     ranger();
     preload();

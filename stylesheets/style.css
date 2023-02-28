@@ -1964,6 +1964,10 @@ color: #a0a0a0;
 
 /* home-02
 ------------------------------------------- */
+.page-title-home2 {
+    margin-top: 124px;
+}
+
 .home-02.main-content {
     padding-bottom: 0;
 }

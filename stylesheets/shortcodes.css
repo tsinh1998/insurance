@@ -137,7 +137,7 @@
 /* page-title-home1 */
 .page-title-home1 {
     background-image: url(../images/page-title/pt.png);
-    background-position: 95% 80px;
+    background-position: 88% 80px;
     background-repeat: no-repeat;
     margin-top: 74px;
 }
@@ -199,6 +199,7 @@
 .page-title-home1 .text a {
     padding-left: 10px;
     color: #3AC19B;
+    display: inline-block;
 }
 
 .page-title-home1 .text a:hover {
@@ -269,7 +270,11 @@
 }
 
 .widget-service-item .poster {
-    margin-bottom: -115px;
+    margin-bottom: -29.2%;
+}
+
+.widget-service-item .poster img {
+    width: 100%;
 }
 
 .widget-service-item .content {
@@ -692,7 +697,7 @@
 
 .widget-get-quote .get-quote-box {
     position: absolute;
-    left: 58.7%;
+    right: 13%;
     top: 30%;
 }   
 

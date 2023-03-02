@@ -253,7 +253,7 @@
       700:{
         slidesPerView:2
       },
-      780:{
+      790:{
         slidesPerView:3
       },
       1220: {

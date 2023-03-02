@@ -243,8 +243,15 @@ select {
 }
 
 option{ 
-    color: #fff;
-    background-color: #a0a0a0;
+    padding: 5px 18px 5px 29px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    color: #042181;
+    font-family: "Hind",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 4px;
 }
 
 
@@ -374,6 +381,7 @@ color: #a0a0a0;
 .header-ct-center {
     flex-grow: 1;
     justify-content: center;
+    position: relative;
 }
 
 .nav-wrap {
@@ -413,9 +421,14 @@ color: #a0a0a0;
 
 #menu-primary-menu > li > a span {
     position: absolute;
-    right: 7px;
+    margin-left: 7px;
     top: 48%;
     font-size: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+#menu-primary-menu > li:hover > a span {
+    transform: rotate(180deg);
 }
 
 #mainnav ul.sub-menu {
@@ -461,11 +474,15 @@ color: #a0a0a0;
     color: #042181;
 }
 
+#menu-primary-menu > li.tf-megamenu {
+    position: unset;
+}
+
 #mainnav .tf-megamenu ul.sub-menu {
     display: flex;
     left: 0;
     gap: 29px;
-    width: 1170px;
+    width: 100%;
 }
 
 #mainnav .tf-megamenu ul.sub-menu li {
@@ -700,8 +717,6 @@ color: #a0a0a0;
 
 .header-mobile .inner-canvas-nav .logo {
     padding: 25px 25px !important;
-    /* line-height: unset; */
-    /* text-align: left; */
     border-bottom: 1px solid #D1D1D18F;
 }
 
@@ -712,6 +727,9 @@ color: #a0a0a0;
 }
 
 #mainnav_canvas ul li a {
+    font-family: "Raleway",sans-serif;
+    font-weight: 700;
+    font-size: 16px;
     display: inline-block;
     width: 100%;
     height: auto;
@@ -1409,7 +1427,7 @@ color: #a0a0a0;
 }
 
 .widget-post .all-content .title a:hover  {
-    color: #36a7e3;
+    color: #3AC19B;
 }
 
 .widget-post .all-content p {
@@ -1458,11 +1476,19 @@ color: #a0a0a0;
     position: absolute;
     content: "";
     left: 0;
+    right: 0;
     bottom: 0px;
     width: 54px;
     height: 8px;
     background-color: #C0F8E8;
     z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+
+.widget-block-before:hover::after {
+    left: auto;
+    right: -36px;
+    transition: all 0.3s ease-in-out;
 }
 
 .blog .main-content-wrap .widget-post {
@@ -2063,6 +2089,7 @@ color: #a0a0a0;
 
 .widget-testimonial.style-1 .widget-testimonial-wrap .widget-testimonial-item {
     margin-top: 50px;
+    max-width: unset;
 }
 
 .home-01 .widget-blog-update {

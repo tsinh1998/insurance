@@ -28,6 +28,7 @@
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/nice-select.css">
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
@@ -150,6 +151,14 @@
                     <div class="header-ct-right">
                         <div class="header-customize-item show-search">
                             <a class="icon-show-search" href="#"><span class="icon-search"></span></a>
+                            <div class="submenu top-search widget_search">
+                                <form role="search" method="get" class="search-form">
+                                    <div class="input-group">
+                                        <input type="search" placeholder="Search…" required>
+                                        <button type="submit" class="search-submit"><span class="icon-search"></span></button>
+                                    </div>
+                                </form>    
+                            </div>
                         </div>				
                         <div class="header-customize-item header-btn">
                             <a class="widget-button" href="#"><span class="icon-calling"></span> Get in touch</a>
@@ -538,12 +547,17 @@
                                             </fieldset>
                                         </div>
                                         <div class="select">
-                                            <select>
-                                                <option value="default" selected="">Slect type of insurance</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                            </select>
+                                            <div class="nice-select wide" tabindex="0">
+                                                <span class="current">Slect type of insurance</span>
+                                                <ul class="list">
+                                                    <li data-value="Nothing" data-display="Select" class="option selected">Slect type of insurance</li>
+                                                    <li data-value="1" class="option">Service 1</li>
+                                                    <li data-value="2" class="option">Service 2</li>
+                                                    <li data-value="3" class="option">Service 3</li>
+                                                    <li data-value="4" class="option">Service 4</li>
+                                                </ul>
+                                            </div>
+                                            
                                         </div>
                                         <div class="range-slider">
                                             <div class="title">Limits of Balance</div>
@@ -581,12 +595,17 @@
                                             </div>
                                             <div class="select">
                                                 <div class="title">Type of insurance</div>
-                                                <select>
-                                                    <option value="default" selected="">your name</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                </select>
+                                                <div class="nice-select wide" tabindex="0">
+                                                    <span class="current">your name</span>
+                                                    <ul class="list">
+                                                        <li data-value="Nothing" data-display="Select" class="option selected">your name</li>
+                                                        <li data-value="1" class="option">Name 1</li>
+                                                        <li data-value="2" class="option">Name 2</li>
+                                                        <li data-value="3" class="option">Name 3</li>
+                                                        <li data-value="4" class="option">Name 4</li>
+                                                    </ul>
+                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="form-submit">
@@ -1211,12 +1230,16 @@
                                         </fieldset>
                                     </div>
                                     <div class="select">
-                                        <select>
-                                            <option value="default" selected>Choose the service to consult</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                        <div class="nice-select wide" tabindex="0">
+                                            <span class="current">Choose the service to consult</span>
+                                            <ul class="list">
+                                                <li data-value="Nothing" data-display="Select" class="option selected">Choose the service to consult</li>
+                                                <li data-value="1" class="option">Service 1</li>
+                                                <li data-value="2" class="option">Service 2</li>
+                                                <li data-value="3" class="option">Service 3</li>
+                                                <li data-value="4" class="option">Service 4</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-submit">
@@ -1253,6 +1276,7 @@
     </div>
 
     <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.nice-select.js"></script>
     <script src="javascript/countto.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>

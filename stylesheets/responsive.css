@@ -102,6 +102,10 @@
     .widget-about-us .button a {
         margin-bottom: 10px;
     }
+    .widget-about-us .poster::before,
+    .widget-about-us .poster::after {
+        display: none;
+    }
 }
 
 /* widget-choose-us */
@@ -178,17 +182,17 @@
     }
 }
 @media (min-width:790px) {  
-    .widget-testimonial-wrap::after {
+    .widget-testimonial-wrap .slide-type-5::after {
         position: absolute;
         content: "";
-        width: 260px;
+        width: 490px;
         height: 100%;
         right: 0;
         top: 0;
         background-color: rgba(255, 255, 255, 0.5);
         z-index: 50;
     }
-    .widget-testimonial-wrap::before {
+    .widget-testimonial-wrap .slide-type-5::before {
         position: absolute;
         content: "";
         width: 260px;

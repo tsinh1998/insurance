@@ -221,7 +221,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {	
 width: 100%;	
-height: 53px;
+height: 50px;
 font-family: "Hind",sans-serif;
 font-size: 13px;
 line-height: 18px;
@@ -242,16 +242,8 @@ select {
     color: #fff;
 }
 
-option{ 
-    padding: 5px 18px 5px 29px;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+select option {
     color: #042181;
-    font-family: "Hind",sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    margin-bottom: 4px;
 }
 
 
@@ -907,9 +899,19 @@ color: #a0a0a0;
     width: 50%;
 }
 
-.footer-content form .select {
+.footer-content form .select .nice-select {
     margin-top: 12px;
     margin-bottom: 12px;
+    font-family: "Hind",sans-serif;
+    font-size: 13px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0;
+    color: #fff;
+}
+
+.footer-content form .select .nice-select ul li {
+    color: #042181;
 }
 
 .footer-content form .select select {
@@ -2102,8 +2104,6 @@ color: #a0a0a0;
 
 .home-01 .newsletter {
     padding-top: 254px;
-    position: relative;
-    z-index: -1;
 }
 
 /* home-02
@@ -2119,6 +2119,11 @@ color: #a0a0a0;
 /* widget-about-us */
 .home-02 .widget-about-us .content {
     width: 680px;
+}
+
+.home-02 .widget-about-us .poster::before,
+.home-02 .widget-about-us .poster::after {
+    display: none;
 }
 
 .widget-about-us .file-download {
@@ -2342,6 +2347,7 @@ color: #a0a0a0;
 .page-title-home3 {
     padding: 380px 0 170px 0;
     text-align: center;
+    background-attachment: fixed;
     background-image: url(../images/page-title/home-3.jpg),
     linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     background-position: center;
@@ -2373,7 +2379,6 @@ color: #a0a0a0;
 
 .page-title-home3 .widget-button {
     color: #FFFFFF;
-    width: 184px;
     padding: 15px 24px;
     background: rgba(255, 255, 255, 0.2);
     border: 2px solid #C0F8E8;
@@ -3390,6 +3395,7 @@ color: #a0a0a0;
 .carers .widget-join-team {
     padding-top: 100px;
     background-color: #042181;
+    background-attachment: fixed;
     background-image: url(../images/join-team/Icon.png);
     background-repeat: no-repeat;
     background-position: 81.45% 141px;
@@ -3651,6 +3657,7 @@ color: #a0a0a0;
 
 .services-grid .widget-service-list.style1 {
     max-width: unset;
+    background-attachment: fixed;
     background-image: url(../images/services/background.jpg);
 }
 

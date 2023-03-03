@@ -753,6 +753,7 @@
 }
 
 .widget-get-quote .get-quote-inner {
+    background-attachment: fixed;
     background-image: url(../images/get-a-quote/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -881,7 +882,7 @@ display: block;
     opacity: 1;
 }
 
-.get-quote-box .tab-container #home select  {
+.get-quote-box .tab-container #home .nice-select  {
     padding: 12px 14px;
     font-weight: 400;
     font-size: 16px;
@@ -1202,7 +1203,6 @@ display: block;
 }
 
 .page-title-home2 .widget-button {
-    width: 184px;
     padding: 15px 24px;
     border: 2px solid #C0F8E8;
     margin-right: 10px;
@@ -1309,6 +1309,7 @@ display: block;
 
 /* widget-sevice-1 */
 .widget-service-1 {
+    background-attachment: fixed;
     background-image: url(../images/services/background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -2103,6 +2104,7 @@ display: block;
 .widget-request-quote-wrap {
     width: 100%;
     text-align: center;
+    background-attachment: fixed;
     background-image: url(../images/get-a-quote/background-1.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -2145,7 +2147,6 @@ display: block;
 }
 
 .widget-request-quote-wrap .widget-button {
-    width: 184px;
     padding: 15px 24px;
     background-color: transparent;
     border: 2px solid #C0F8E8;
@@ -2209,11 +2210,10 @@ display: block;
     width: 100%;
 }
 
-.widget-request-quote-form form select {
+.widget-request-quote-form form .nice-select {
     color: #042181;
     border: 1px solid #E2E2E2;
     margin-bottom: 35px;
-    font-weight: 400;
     font-size: 16px;
     opacity: 1;
 }
@@ -2457,6 +2457,7 @@ display: block;
 .widget-business-insurance-content {
     text-align: center;
     padding: 100px 0 305px 0;
+    background-attachment: fixed;
     background-image: url(../images/business-insurance/background.png);
     background-position: center;
     background-repeat: no-repeat;

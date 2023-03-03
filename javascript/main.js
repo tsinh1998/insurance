@@ -434,6 +434,12 @@
   }
   }
 
+  var dropOptionForm = function () {
+    if ($("select").length > 0) {
+      $("select").niceSelect();
+    }
+  };
+
   var preload = function() {
     $(window).on('load', function() {
       $('#preload').delay(1500).fadeOut('fast', function() {
@@ -462,6 +468,7 @@
     counter();
     tabs();
     ranger();
+    dropOptionForm();
     preload();
   });
 

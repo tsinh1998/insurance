@@ -28,6 +28,7 @@
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="stylesheets/shortcodes.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/nice-select.css">
 
     <!-- Responsive -->
     <link rel="stylesheet" type="text/css" href="stylesheets/responsive.css">
@@ -410,7 +411,7 @@
                                             </fieldset>
                                         </div>
                                         <div class="select">
-                                            <select>
+                                            <select class="wide">
                                                 <option value="default" selected="">Slect type of insurance</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
@@ -453,7 +454,7 @@
                                             </div>
                                             <div class="select">
                                                 <div class="title">Type of insurance</div>
-                                                <select>
+                                                <select class="wide">
                                                     <option value="default" selected="">your name</option>
                                                     <option value="1">1</option>
                                                     <option value="2">2</option>
@@ -620,12 +621,16 @@
                                         </fieldset>
                                     </div>
                                     <div class="select">
-                                        <select>
-                                            <option value="default" selected>Choose the service to consult</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                        </select>
+                                        <div class="nice-select wide" tabindex="0">
+                                            <span class="current">Choose the service to consult</span>
+                                            <ul class="list">
+                                                <li data-value="Nothing" data-display="Select" class="option selected">Choose the service to consult</li>
+                                                <li data-value="1" class="option">Service 1</li>
+                                                <li data-value="2" class="option">Service 2</li>
+                                                <li data-value="3" class="option">Service 3</li>
+                                                <li data-value="4" class="option">Service 4</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="form-submit">
@@ -662,6 +667,7 @@
     </div>
 
     <script src="javascript/jquery.min.js"></script>
+    <script src="javascript/jquery.nice-select.js"></script>
     <script src="javascript/countto.js"></script>
     <script src="javascript/swiper-bundle.min.js"></script>
     <script src="javascript/bootstrap.min.js"></script>

@@ -978,6 +978,7 @@ color: #a0a0a0;
     padding-top: 131px;
     padding-bottom: 139px;
     position: relative;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2147,6 +2148,13 @@ color: #a0a0a0;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.file-download .file-item:hover {
+    color: #042181;
+    background-color: #C0F8E8;
 }
 
 .widget-signature .name {
@@ -2848,6 +2856,13 @@ color: #a0a0a0;
     width: 100%;
     height: 300px;
     background: linear-gradient(0deg, #042181 0%, rgba(4, 33, 129, 0) 100%);
+    left: unset;
+    z-index: unset;
+    animation: none;
+}
+
+.about-us-page .widget-about-us-wrap .poster::before {
+    display: none;
 }
 
 .about-us-page .widget-about-us-wrap .poster .sub-content {

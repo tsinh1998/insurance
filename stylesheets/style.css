@@ -2058,27 +2058,30 @@ color: #a0a0a0;
     background-color: #F8F8F8;
 }
 
-.home-01 .widget-service {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.home-01 .section-service {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.home-01 .widget-about-us {
-    margin-bottom: 116px;
+.home-01 .section-about-us {
+    padding-bottom: 116px;
 }
 
-.home-01 .widget-choose-us,
-.home-01 .widget-project {
-    margin-bottom: 100px;
+.home-01 .section-choose-us,
+.home-01 .section-project {
+    padding-bottom: 100px;
 }
 
-.home-01 .widget-counter {
-    margin-bottom: -170px;
+.home-01 .section-counter {
+    padding-bottom: -170px;
+}
+
+.home-01 .section-testimonial {
+    padding-bottom: 70px;
 }
 
 .widget-testimonial.style-1 .widget-testimonial-wrap {
     max-width: unset;
-    margin-bottom: 70px;
     text-align: start;
 }
 
@@ -2095,7 +2098,7 @@ color: #a0a0a0;
     max-width: unset;
 }
 
-.home-01 .widget-blog-update {
+.home-01 .section-blog-update {
     margin-bottom: -198px;
 }
 

@@ -129,9 +129,9 @@
     .widget-counter-wrap {
         flex-wrap: wrap;
         text-align: center;
-        justify-content: center;
-        padding-left: 1em;
-        padding-right: 1em;
+        justify-content: center !important;
+        margin-left: 1em;
+        margin-right: 1em;
     }
 }
 
@@ -204,7 +204,6 @@
     }
 }
 
-
 /* widget-blog-update */
 @media (max-width:900px) {  
     .widget-blog-update .widget-blog-update-wrap {
@@ -220,5 +219,81 @@
     .newsletter {
         margin-left: 1em;
         margin-right: 1em;
+    }
+}
+
+/* page-title-home-2 */
+@media (max-width:1200px) {  
+    .page-title-home2 .page-title-container {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .page-title-home2 button {
+        top: 85%;
+    }
+}
+
+/* widget-our-service */
+@media (max-width:1400px) {  
+    .widget-our-service .widget-our-service-slide .swiper {
+        margin-left: 1em;
+        margin-right: 1em;
+        width: unset;
+    }
+}
+@media (max-width:1000px) {  
+    .widget-slide-style1 .swiper-button {
+        display: none;
+    }
+}
+
+/* widget-service-1 */
+@media (max-width:1400px) {  
+    .widget-service-1-item {
+        margin-left: 1em;
+        margin-right: 1em;
+        flex-wrap: wrap;
+    }
+}
+
+/* widget-get-quote */
+@media (max-width:1100px) {  
+    .widget-get-quote.style-1 .get-quote-wrap {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .widget-get-quote.style-1 .get-quote-box {
+        margin-bottom: 0;
+        padding: 62px 29px 73px;
+    }
+    .widget-get-quote.style-1 .get-quote-wrap .get-quote-content {
+        padding-top: 0;
+    }
+}
+
+@media (max-width:650px) {  
+    .widget-get-quote.style-1 .get-quote-box .tabs button {
+        width: 100%;
+    }
+    .widget-get-quote.style-1 .get-quote-box,
+    .get-quote-box .tab-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .get-quote-box .tab-container {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+
+/* widget-project-1 */
+@media (max-width:1400px) {  
+    .widget-project-1 .widget-project-1-slide {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .widget-project-1 .widget-swiper-pagination .swiper-pagination {
+        display: none;
     }
 }

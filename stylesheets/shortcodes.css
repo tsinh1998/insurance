@@ -424,7 +424,6 @@
 
 .widget-about-us .poster {
     flex-grow: 1;
-    position: relative;
     padding-left: 124px;
     position: relative;
 }
@@ -986,7 +985,7 @@ display: block;
     text-align: center;
 }
 
-.widget-testimonial > p {
+.widget-testimonial p.text {
     font-family: 'Hind',sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -994,13 +993,11 @@ display: block;
     color: #4F556A;
     margin: auto;
     margin-top: 24px;
-    margin-bottom: 60px;
     width: 100%;
     max-width: 540px;
 }
 
 .widget-testimonial-wrap {
-    width: 100%;
     max-width: 1400px;
     margin: auto;
     display: flex;
@@ -1707,6 +1704,7 @@ display: block;
     padding-bottom: 231px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: -221px;
 }
@@ -1956,18 +1954,6 @@ display: block;
     max-width: 680px;
 }
 
-.widget-services-we-offer-wrap {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    gap: 40px;
-}
-
-.widget-services-we-offer-item {
-    width: 320px;
-}
-
 .widget-services-we-offer-wrap .poster {
     border-bottom: 4px solid #C0F8E8;
     width: 100%;
@@ -2021,20 +2007,13 @@ display: block;
 
 /* widget-claim-settlement */
 .home-03 .widget-claim-settlement {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .widget-claim-settlement {
     text-align: center;
 }
 
-.widget-claim-settlement-wrap {
-    width: 100%;
-    max-width: 1040px;
-    margin: auto;
-    display: flex;
-    gap: 40px;
-}
 
 .widget-claim-settlement-item {
     width: 100%;

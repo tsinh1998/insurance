@@ -139,10 +139,10 @@
       },
     
       breakpoints: {
-        1320: {
+        800: {
           slidesPerView: 2,
         },
-        1480: {
+        1200: {
           slidesPerView: 3,
         },
       }
@@ -163,7 +163,7 @@
         },
       
         breakpoints: {
-          740:{
+          650:{
             slidesPerView:2
           },
           1200: {
@@ -222,13 +222,13 @@
     },
   
     breakpoints: {
-      780:{
-        slidesPerView:2
+      700:{
+        slidesPerView: 2,
       },
-      1220: {
-        slidesPerView:3
+      1000: {
+        slidesPerView: 3,
       },
-      1650:{
+      1300:{
         slidesPerView: 4,
       }
     }
@@ -250,16 +250,16 @@
     },
   
     breakpoints: {
-      700:{
+      600:{
         slidesPerView:2
       },
-      790:{
+      1075:{
         slidesPerView:3
       },
-      1220: {
+      1200: {
         slidesPerView:4
       },
-      1650:{
+      1400:{
         slidesPerView: 5,
       }
     }

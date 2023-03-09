@@ -222,13 +222,13 @@
     },
   
     breakpoints: {
-      700:{
-        slidesPerView: 2,
+      780:{
+        slidesPerView:2
       },
-      1000: {
-        slidesPerView: 3,
+      1220: {
+        slidesPerView:3
       },
-      1300:{
+      1650:{
         slidesPerView: 4,
       }
     }

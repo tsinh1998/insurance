@@ -225,7 +225,7 @@
     .widget-testimonial-wrap .slide-type-5::after {
         position: absolute;
         content: "";
-        width: 490px;
+        width: 440px;
         height: 100%;
         right: 0;
         top: 0;
@@ -235,7 +235,7 @@
     .widget-testimonial-wrap .slide-type-5::before {
         position: absolute;
         content: "";
-        width: 490px;
+        width: 440px;
         height: 100%;
         left: 0;
         top: 0;
@@ -483,5 +483,30 @@
     .page-title-container {
         margin-right: 1em !important;
         margin-left: 1em !important;
+    }
+}
+
+/* team-detail */
+@media (max-width:900px) { 
+    .team-detail .poster {
+        margin-bottom: 0;
+    }
+}
+
+/* testimonials */
+@media (max-width:1400px) { 
+    .testimonials .widget-business-customers-wrap .widget-slide-style1 {
+        width: unset;
+        margin-right: 1em;
+        margin-left: 1em;
+    }
+}
+
+/* widget-faq */
+@media (max-width:1400px) { 
+    .widget-accordion-1,
+    .widget-accordion {
+        margin-right: 1em;
+        margin-left: 1em;
     }
 }

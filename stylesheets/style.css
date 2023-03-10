@@ -1021,7 +1021,6 @@ color: #a0a0a0;
 /* ride-sidebar */
 .ride-sidebar {
     width: 100%;
-    max-width: 440px;
 }
 
 .ride-sidebar-block {
@@ -1126,7 +1125,7 @@ color: #a0a0a0;
 .ride-sidebar .insurance-partners-wrap {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 9px;
 }
 
 .ride-sidebar .tag-wrap {
@@ -1181,6 +1180,10 @@ color: #a0a0a0;
 .ride-sidebar .quick-quote .email-number {
     display: flex;
     gap: 20px;
+}
+
+.ride-sidebar .quick-quote .email-number fieldset {
+    width: 100%;
 }
 
 .ride-sidebar .quick-quote select {
@@ -1248,6 +1251,10 @@ color: #a0a0a0;
 .ride-sidebar .service-quote p {
     color: #4F556A;
     margin-bottom: 16px;
+    font-family: "Hind",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.5px;
 }
 
 .ride-sidebar .service-quote .file-item {
@@ -3245,7 +3252,6 @@ color: #a0a0a0;
 }
 
 .widget-block-search-1 {
-    width: 100%;
     max-width: 680px;
     margin: auto;
     margin-bottom: 30px;
@@ -3306,12 +3312,9 @@ color: #a0a0a0;
     display: flex;
 }
 
-.faqs .widget-faq.style-1 .widget-accordion-1 .image {
-    margin-left: 90px;
-}
-
-.faqs .widget-faq.style-1 .widget-accordion-1 .accordion-items-1 {
-    max-width: 680px;
+.faqs .widget-faq.style-1 .image {
+    text-align: start;
+    margin-left: 50px;
 }
 
 .faqs .widget-faq.style-1 .widget-accordion-1 .accordion-heading-1,
@@ -3361,7 +3364,7 @@ color: #a0a0a0;
     background-image: url(../images/page-title/carrer.jpg);
 }
 
-.carers .widget-job > p {
+.carers .widget-job p {
     max-width: 540px;
     margin: auto;
     font-family: 'Hind',sans-serif;
@@ -3370,14 +3373,9 @@ color: #a0a0a0;
     line-height: 26px;
     color: #4F556A;
     margin-top: 24px;
-    margin-bottom: 60px;
 }
 
 .widget-filters {
-    max-width: 1400px;
-    margin: auto;
-    display: flex;
-    gap: 40px;
     margin-bottom: 60px;
 }
 
@@ -3560,12 +3558,12 @@ color: #a0a0a0;
     background-image: url(../images/page-title/service.jpg);
 }
 
-.services-list > .heading {
+.services-list > .section-heading {
     width: 100%;
     text-align: center;
 }
 
-.services-list > .heading .button {
+.services-list > .section-heading .button {
     margin-top: 24px;
     display: flex;
     gap: 9px;
@@ -3573,7 +3571,7 @@ color: #a0a0a0;
     margin-bottom: 60px;
 }
 
-.services-list > .heading .button a {
+.services-list > .section-heading .button a {
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 12px; 
@@ -3583,7 +3581,7 @@ color: #a0a0a0;
     padding: 6px 10px;
 }
 
-.services-list > .heading .button a:hover {
+.services-list > .section-heading .button a:hover {
     color: #C0F8E8;
     background-color: #042181;
 }
@@ -3649,28 +3647,25 @@ color: #a0a0a0;
 }
 
 .services-grid .widget-service-list {
-    max-width: 1400px;
     margin: auto;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.services-grid .widget-service-list-wrap {
-    display: flex;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
 .services-grid .widget-service-list-wrap .widget-post {
     width: 100%;
-    max-width: 22.85%;
     flex-wrap: wrap;
+    margin-bottom: 40px;
 }
 
 .services-grid .widget-service-list-wrap .widget-post .image {
     border-bottom: 4px solid #C0F8E8;
     border-radius: 0 60px 0 0;
     overflow: hidden;
+}
+
+.services-grid .widget-service-list-wrap .widget-post .image img {
+    width: 100%;
 }
 
 .services-grid .widget-service-list-wrap .widget-post .all-content {
@@ -3688,7 +3683,6 @@ color: #a0a0a0;
 }
 
 .services-grid .widget-service-list.style1 .widget-service-list-inner {
-    max-width: 1400px;
     margin: auto;
     padding: 100px 0;
 }
@@ -3868,6 +3862,7 @@ color: #a0a0a0;
 .services-detail-content .block-list .widget-choose-us-item .text {
     font-size: 20px;
     line-height: 23px;
+    margin-top: 16px;
 }
 
 .services-detail-content .image-box {

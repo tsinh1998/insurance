@@ -335,6 +335,15 @@
         $(this).siblings().removeClass("active");
       });
     }
+    if ( $('div').hasClass('widget-accordion-2') ) {
+      $(".accordion-items-2").on("click", ".accordion-heading-2", function () {
+        $(this).toggleClass("active").next().slideToggle();
+    
+        $(".accordion-content-2").not($(this).next()).slideUp(300);
+    
+        $(this).siblings().removeClass("active");
+      });
+    }
   }
 
   var goTop = function() {

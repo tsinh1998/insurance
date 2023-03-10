@@ -2257,6 +2257,7 @@ display: block;
     position: relative;
     margin-bottom: 40px;
     text-align: start;
+    transition: all 0.3s ease-in-out;
 }
 
 .widget-job .widget-job-item .heading {
@@ -2275,6 +2276,7 @@ display: block;
     line-height: 25.5px;
     color: #4F556A;
     margin-bottom: 22px;
+    transition: all 0.3s ease-in-out;
 }
 
 .widget-job .widget-job-item img {
@@ -2312,16 +2314,12 @@ display: block;
     background-color: #F5F5F5;
     padding: 15px 24px;
     border-radius: 20px 0px 0px 0px;
+    transition: all 0.3s ease-in-out;
 }
 
 .widget-job .widget-job-item .apply span {
     margin-right: 10px;
 }
-
-/* .widget-job .widget-job-item .apply a:hover,
-.widget-job .widget-job-item .apply a:hover span::before {
-    color: #fff;
-} */
 
 .widget-job .widget-job-item:hover {
     background-color: #042181;
@@ -2345,6 +2343,7 @@ display: block;
     text-align: center;
 }
 
+.widget-accordion-2,
 .widget-accordion-1,
 .widget-accordion {
     text-align: start;
@@ -2352,17 +2351,20 @@ display: block;
     margin: auto;
 }
 
+.widget-accordion-2 .accordion-items-2,
 .widget-accordion-1 .accordion-items-1,
 .widget-accordion .accordion-items {
     display: flex;
     gap: 20px 40px;
 }
 
+.widget-accordion-2 .accordion-items-2 .list-2,
 .widget-accordion-1 .accordion-items-1 .list-1,
 .widget-accordion .accordion-items .list {
     width: 100%;
 }
 
+.widget-accordion-2 .accordion-items-2 .list-2 .accordion-heading-2,
 .widget-accordion-1 .accordion-items-1 .list-1 .accordion-heading-1,
 .widget-accordion .accordion-items .list .accordion-heading {
     position: relative;
@@ -2378,12 +2380,14 @@ display: block;
     color: #4F556A;
 }
 
+.widget-accordion-2 .accordion-items-2 .list-2 .accordion-heading-2 span,
 .widget-accordion-1 .accordion-items-1 .list-1 .accordion-heading-1 span,
 .widget-accordion .accordion-items .list .accordion-heading span {
     font-weight: 900;
     color: #3AC19B;
 }
 
+.widget-accordion-2 .accordion-items-2 .accordion-heading-2::after,
 .widget-accordion-1 .accordion-items-1 .accordion-heading-1::after,
 .widget-accordion .accordion-items .accordion-heading::after {
     position: absolute;
@@ -2394,11 +2398,13 @@ display: block;
     color: #042181;
 }
 
+.widget-accordion-2 .accordion-items-2 .accordion-heading-2.active::after,
 .widget-accordion-1 .accordion-items-1 .accordion-heading-1.active::after,
 .widget-accordion .accordion-items .accordion-heading.active::after {
     content: "-";
 }
 
+.widget-accordion-2 .accordion-items-2 .list-2 .accordion-content-2,
 .widget-accordion-1 .accordion-items-1 .list-1 .accordion-content-1,
 .widget-accordion .accordion-items .list .accordion-content {
     display: none;
@@ -2414,6 +2420,7 @@ display: block;
     color: #989CAA;
 }
 
+.widget-accordion-2 .accordion-items-2 .list-2 .accordion-content-2 span,
 .widget-accordion-1 .accordion-items-1 .list-1 .accordion-content-1 span,
 .widget-accordion .accordion-items .list .accordion-content span {
     font-weight: 700;

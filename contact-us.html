@@ -103,7 +103,7 @@
                                         <a href="pricing.html">Pricing</a>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <a href="">Portfolio<span class="icon-arrow-down"></span></a>
+                                        <a href="#">Portfolio<span class="icon-arrow-down"></span></a>
                                         <ul class="sub-menu">
                                             <li class="menu-item"><a href="our-team.html">Team</a></li>
                                             <li class="menu-item"><a href="team-detail.html">Team Detail</a></li>
@@ -236,8 +236,8 @@
     </header>
     
     <header class="contact-us banner-header">
-        <div class="page-title wow fadeIn animated">
-            <div class="page-title-container wow pulse animated">
+        <div class="page-title wow fadeIn">
+            <div class="page-title-container wow pulse">
                 <h1 class="page-title-heading">Contact us</h1> 
                 <div class="breadcrumb-trail">
                     Home / Contact us
@@ -248,129 +248,143 @@
 
     <div class="contact-us main-content-1">
 
-
-        <div class="widget-request-quote-form style-1">
-            <div class="form-content">
-                <div class="content-wrap">
-                    <div class="location">
-                        <div class="main-title">Support, answer and help, get in touch</div>
-                        <div class="address">
-                            <div class="icon"><span class="icon-map-pin"></span></div>
-                            <div class="content">
-                                <div class="text">Address office</div>
-                                <p>600 Main St, Suite A Edmonds, WA 98020</p>
+        <div class="tf-section section-request-quote-form">
+            <div class="widget-request-quote-form style-1">
+                <div class="form-content wow fadeInLeft animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
+                    <div class="content-wrap">
+                        <div class="location">
+                            <div class="main-title">Support, answer and help, get in touch</div>
+                            <div class="address">
+                                <div class="icon"><span class="icon-map-pin"></span></div>
+                                <div class="content">
+                                    <div class="text">Address office</div>
+                                    <p>600 Main St, Suite A Edmonds, WA 98020</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="phone">
-                            <div class="icon"><span class="icon-phone"></span></div>
-                            <div class="content">
-                                <div class="text">USA</div>
-                                <p>+44 1632 960905</p>
+                            <div class="phone">
+                                <div class="icon"><span class="icon-phone"></span></div>
+                                <div class="content">
+                                    <div class="text">USA</div>
+                                    <p>+44 1632 960905</p>
+                                </div>
+                                <span></span>
+                                <div class="content">
+                                    <div class="text">Global</div>
+                                    <p>070 5472 6467 </p>
+                                </div>
                             </div>
-                            <span></span>
-                            <div class="content">
-                                <div class="text">Global</div>
-                                <p>070 5472 6467 </p>
-                            </div>
-                        </div>
-                        <div class="mail">
-                            <div class="icon"><span class="icon-mail-envelope-closed"></span></div>
-                            <div class="content">
-                                <div class="text">Email</div>
-                                <p>grabyinsur@support.com</p>
+                            <div class="mail">
+                                <div class="icon"><span class="icon-mail-envelope-closed"></span></div>
+                                <div class="content">
+                                    <div class="text">Email</div>
+                                    <p>grabyinsur@support.com</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <form action="#" class="wow fadeInRight animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInRight;">
+                    <div class="comment-wrap-input">
+                        <div class="comment name">
+                            <fieldset class="infor-container">
+                                <div class="title">Full name</div>
+                                <input type="text" id="author" placeholder="Your name" name="author" aria-required="true">
+                            </fieldset>
+                        </div>
+                        <div class="comment email-number">
+                            <fieldset class="infor-container">
+                                <div class="title">Email address</div>
+                                <input type="text" id="email" placeholder="e.g.john@gmail.com" name="email" aria-required="true">
+                            </fieldset>
+                            <fieldset class="infor-container">
+                                <div class="title">Phone</div>
+                                <input type="text" id="phone" placeholder="123456789" name="number" aria-required="true">
+                            </fieldset>
+                        </div>
+                        <div class="select">
+                            <div class="title">Choose your solution</div>
+                            <select class="wide" style="display: none;">
+                                <option value="default" selected="">Life insurance</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </select><div class="nice-select wide" tabindex="0"><span class="current">Life insurance</span><ul class="list"><li data-value="default" class="option selected">Life insurance</li><li data-value="1" class="option">1</li><li data-value="2" class="option">2</li><li data-value="3" class="option">3</li></ul></div>
+                        </div>
+                        <div class="comment content">
+                            <div class="title">Message</div>
+                            <fieldset class="infor-container">
+                                <textarea id="comment-message" placeholder="Message" name="comment" rows="3"></textarea>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="form-submit">
+                        <span class="wrap-input-submit">
+                            <button>Send request</button>
+                        </span>
+                    </div>
+                </form>
             </div>
-            <form action="#">
-                <div class="comment-wrap-input">
-                    <div class="comment name">
-                        <fieldset class="infor-container">
-                            <div class="title">Full name</div>
-                            <input type="text" id="author" placeholder="Your name" name="author" aria-required="true">
-                        </fieldset>
-                    </div>
-                    <div class="comment email-number">
-                        <fieldset class="infor-container">
-                            <div class="title">Email address</div>
-                            <input type="text" id="email" placeholder="e.g.john@gmail.com" name="email" aria-required="true">
-                        </fieldset>
-                        <fieldset class="infor-container">
-                            <div class="title">Phone</div>
-                            <input type="text" id="phone" placeholder="123456789" name="number" aria-required="true">
-                        </fieldset>
-                    </div>
-                    <div class="select">
-                        <div class="title">Choose your solution</div>
-                        <select>
-                            <option value="default" selected="">Life insurance</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                    <div class="comment content">
-                        <div class="title">Message</div>
-                        <fieldset class="infor-container">
-                            <textarea id="comment-message" placeholder="Message" name="comment" rows="3"></textarea>
-                        </fieldset>
-                    </div>
-                </div>
-                <div class="form-submit">
-                    <span class="wrap-input-submit">
-                        <button>Send request</button>
-                    </span>
-                </div>
-            </form>
         </div>
           
-        <div class="widget-claim-settlement">
-            <div class="widget-title-section">
-                <div class="main-title">We are here to help you</div>
-                <span class="sub-title">SUPPORT</span>
-            </div>
-            <div class="widget-claim-settlement-wrap">
-                <div class="widget-claim-settlement-item claim-item-1">
-                    <div class="widget-post">
-                        <div class="all-content">
-                            <div class="date widget-block-1">
-                                <span class="icon-file"></span>
-                            </div>
-                            <a href="#" class="title">Requirement <br> accepted</a>
-                            <p>Just give us a call on our toll-free number: <a href="tel:+44 1632 960905">+44 1632 960905</a>  and we will explain the process</p>
-                        </div>
-                    </div>
+        <div class="tf-section section-claim-settlement">
+            <div class="widget-claim-settlement">
+                <div class="widget-title-section">
+                    <div class="main-title wow fadeInDown animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInDown;">Easily handle complaints</div>
+                    <span class="sub-title wow fadeInDown animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInDown;">CLAIM SETTLEMENT</span>
                 </div>
-                <div class="widget-claim-settlement-item claim-item-2">
-                    <div class="widget-post">
-                        <div class="all-content">
-                            <div class="date widget-block-1">
-                                <span class="icon-policy"></span>
+                <div class="widget-claim-settlement-wrap">
+                    <div class="tf-container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="widget-claim-settlement-item claim-item-1 wow fadeInUp animated" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                    <div class="widget-post">
+                                        <div class="all-content">
+                                            <div class="date widget-block-1">
+                                                <span class="icon-file"></span>
+                                            </div>
+                                            <a href="#" class="title">Requirement <br> accepted</a>
+                                            <p>Just give us a call on our toll-free number: <a href="tel:+44 1632 960905">+44 1632 960905</a>  and we will explain the process</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#" class="title">Verify the <br> problem</a>
-                            <p>Choose from more than 120 insurance carriers nationwide to ensure you’re offering the plans that meet your clients’ unique needs.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="widget-claim-settlement-item claim-item-3">
-                    <div class="widget-post">
-                        <div class="all-content">
-                            <div class="date widget-block-1">
-                                <span class="icon-service"></span>
+                            <div class="col-md-4">
+                                <div class="widget-claim-settlement-item claim-item-2 wow fadeInUp animated" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                    <div class="widget-post">
+                                        <div class="all-content">
+                                            <div class="date widget-block-1">
+                                                <span class="icon-policy"></span>
+                                            </div>
+                                            <a href="#" class="title">Verify the <br> problem</a>
+                                            <p>Choose from more than 120 insurance carriers nationwide to ensure you’re offering the plans that meet your clients’ unique needs.</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#" class="title">Everything is <br> solved</a>
-                            <p>Using our simple tool makes contracting quick, easy, and convenient so you’ll be ready to sell before you know it.</p>
+                            <div class="col-md-4">
+                                <div class="widget-claim-settlement-item claim-item-3 wow fadeInUp animated" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                                    <div class="widget-post">
+                                        <div class="all-content">
+                                            <div class="date widget-block-1">
+                                                <span class="icon-service"></span>
+                                            </div>
+                                            <a href="#" class="title">Everything is <br> solved</a>
+                                            <p>Using our simple tool makes contracting quick, easy, and convenient so you’ll be ready to sell before you know it.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="widget-gg-map">
-            <iframe src="https://snazzymaps.com/style/8097/wy" ></iframe>
+        <div class="tf-section section-gg-map">
+            <div class="widget-gg-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60970.262127701295!2d-74.00592191727351!3d40.70962361889174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1678525645600!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </div>
-
     </div>
 
     <a class="go-top show">

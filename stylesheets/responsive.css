@@ -217,11 +217,13 @@
 
 /* widget-testimonial */
 @media (max-width:1400px) {  
+    .widget-testimonial-wrap .swiper,
     .widget-testimonial-wrap  {
-        margin: 0 1em;
+        margin-left: 1em !important;
+        margin-right: 1em !important;
     }
 }
-@media (min-width:1300px) {  
+@media (min-width:1400px) {  
     .widget-testimonial-wrap .slide-type-5::after {
         position: absolute;
         content: "";
@@ -532,10 +534,11 @@
     .faqs .widget-contact-us .image {
         margin: 0;
     }
-    .faqs .widget-request-quote-form.style-1 .form-content {
+    .widget-request-quote-form.style-1 .form-content {
         max-width: unset;
+        margin-top: 40px;
     }
-    .faqs .widget-request-quote-form .form-content .mail {
+    .widget-request-quote-form .form-content .mail {
         margin: 0;
     }
     .faqs .widget-block-search-1 {
@@ -580,6 +583,11 @@
 }
 
 /* services-details */
+@media (max-width: 1400px) { 
+    .services-detail-content .block-list .widget-choose-us-item {
+        width: 100%;
+    }
+}
 @media (max-width: 992px) { 
     .services-detail-content {
         padding: 0;
@@ -598,10 +606,69 @@
     .widget-block-quote {
         padding: 225px 40px 41px 40px;
     }
-    
+    .services-detail-content .image-box-content {
+        position: unset;
+        max-width: unset;
+    }
+    .services-detail-content .image-box::before {
+        display: none;
+    }
+    .services-detail-content .image-box {
+        margin-bottom: 50px;
+    }
 }
+@media (max-width: 921px) { 
+    .services-detail-1-content {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+}
+@media (max-width: 780px) { 
+    .services-detail-1 .widget-choose-us .swiper {
+        margin: 0;
+    }
+}
+
+/* blog */
 @media (max-width: 1400px) { 
-    .services-detail-content .block-list .widget-choose-us-item {
+    .blog-01 .list-post .widget-post {
         width: 100%;
+    }
+    .eror-404.main-content {
+        margin-right: 1em;
+        margin-left: 1em;
+
+    }
+}
+@media (max-width: 1300px) { 
+    .blog-detail .blog-detail-inner {
+        flex-wrap: wrap;
+    }
+    .blog-detail .main-content-wrap {
+        width: 100%;
+    }
+    .blog-detail .ride-sidebar {
+        border: 0;
+        padding: 0;
+        max-width: unset;
+    }
+}
+@media (max-width: 1100px) { 
+    .blog-detail-style01 .blog-detail-inner > .widget-social {
+        left: 40px;
+        top: 0;
+        flex-direction: row;
+    }
+}
+@media (max-width: 992px) { 
+    .blog .main-content-wrap {
+        border: none;
+        padding: 0;
+    }
+    .blog .main-post.widget-post .image img {
+        width: 100%;
+    }
+    .widget-more-news .inner {
+        flex-wrap: wrap;
     }
 }

@@ -356,18 +356,19 @@
 .widget-about-us .content {
     max-width: 560px;
 }
+
 .widget-about-us p {
     font-family: 'Hind',sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 25.5px;
+    line-height: 22px;
     color: #4F556A;
     margin-top: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .widget-about-us ul {
-    padding-bottom: 23px;
+    padding-bottom: 14px;
     border-bottom: 1px solid #EFEFEF;
     margin-bottom: 23px;
 }
@@ -396,10 +397,10 @@
 }
 
 .widget-about-us .phone span {
-    padding: 5px;
+    padding: 3px 3px 0 3px;
     border-radius: 10.5px;
     background-color: #C0F8E8;
-    margin-right: 5px;
+    margin-right: 7px;
 }
 
 .widget-about-us .phone .phone-number {
@@ -407,13 +408,15 @@
     font-size: 30px;
     line-height: 48px;
     color: #042181;
-    margin-bottom: 35px;
+    margin-bottom: 17px;
 }
 
 .widget-about-us .button a {
-    padding: 16px 26px;
+    padding: 14px 24px;
     border: 2px solid #3AC19B;
-    margin-right: 10px;
+    margin-right: 5px;
+    width: 188px;
+    text-align: center;
 }
 
 .widget-about-us .button a:hover {
@@ -423,8 +426,10 @@
 }
 
 .widget-about-us .poster {
-    flex-grow: 1;
-    padding-left: 124px;
+    /* flex-grow: 1; */
+    padding-left: 121px;
+    /* padding-right: 98px; */
+    top: -7px;
     position: relative;
 }
 
@@ -450,13 +455,13 @@
 
 /* widget-project */
 .widget-project-content {
-    width: calc((100vw - ((100vw - 1400px) / 2)) - 20px);
-    padding-left: calc( (100vw - 1400px) / 2 - 20px);
+    width: calc((100vw - ((100vw - 1400px) / 2)) - 7px );
+    padding-left: calc( (100vw - 1400px) / 2 - 10px);
     background-color: #042181;
     padding-bottom: 304px;
     padding-top: 100px;
     margin-bottom: -244px;
-    border-radius: 150px 0 0 0;
+    border-radius: 120px 0 0 0;
     background-image: url(../images/project/Icon.png);
     background-repeat: no-repeat;
     background-position: 112% 0;
@@ -587,7 +592,7 @@
 /* widget-slide-style1 */
 .widget-slide-style1 {
     position: relative;
-    width: calc((100vw - ((100vw - 1470px))) - 20px);
+    width: calc((100vw - ((100vw - 1470px))) - 9px );
     margin-left: auto;
     margin-right: 0;
 }
@@ -600,7 +605,7 @@
     width: 70px;
     height: 70px;
     padding: 15px;
-    font-size: 17px;
+    font-size: 24px;
     background-color: #C0F8E8;
     color: #042181;
     transition: all 0.3s ease-in-out;
@@ -608,7 +613,7 @@
 
 .widget-slide-style1 .swiper-button:hover {
     color: #fff;
-    background-color: #007bff;
+    background-color: #042181;
 }
 
 .widget-slide-style1 .swiper-button::after {
@@ -617,11 +622,11 @@
 }
 
 .widget-slide-style1 .swiper-button-prev {
-    left: -208px;
+    left: -190px;
     transform: rotate(180deg);
 }
 .widget-slide-style1 .swiper-button-next {
-    left: -128px;
+    left: -110px;
 }
 
 
@@ -712,6 +717,7 @@
 
 .widget-counter-item {
     padding: 0px 22px;
+    width: 715px;
 }
 
 .widget-counter-item .number-wrap {
@@ -739,7 +745,7 @@
     font-family: 'Hind',sans-serif;
     font-weight: 600;
     font-size: 20px;
-    line-height: 29px;
+    line-height: 28px;
     color: #fff;
 }
 
@@ -754,19 +760,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0% 0, 160% 0%, 0% 100%, 0 0%);
+    clip-path: polygon(0% 0, 188% 0%, 0% 100%, 0 0%);
     border-radius: 0 150px 0 0;
 }
 
 .widget-get-quote .get-quote-box {
     position: absolute;
-    right: 13%;
-    top: 30%;
+    right: 253px;
+    top: 333px;
 }   
 
 .get-quote-wrap {
-    padding-top: 386px;
-    padding-bottom: 306px;
+    padding-top: 330px;
+    padding-bottom: 214px;
     display: flex;
     width: 100%;
     max-width: 1400px;
@@ -775,11 +781,12 @@
 
 .get-quote-wrap .get-quote-content {
     width: 100%;
-    max-width: 538px;
+    max-width: 536px;
+    padding-top: 55px;
 }
 
 .get-quote-wrap .get-quote-content p {
-    max-width: 480px;
+    max-width: 465px;
     font-family: 'Hind',sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -821,11 +828,11 @@
 .get-quote-box {
     background: #ECEFF1;
     border-radius: 28px;
-    border: 1px solid #FFFFFF;
+    border: 3px solid #FFFFFF;
     padding: 62px 29px 73px;
     box-shadow: 16px -16px 40px rgba(255, 255, 255, 0.8), 16px 4px 64px rgba(0, 0, 0, 0.16);
     width: 100%;
-    max-width: 532px;
+    max-width: 538px;
 }
 
 .get-quote-box .tab-container {
@@ -1015,7 +1022,7 @@ display: block;
     font-family: 'Raleway',sans-serif;
     font-weight: 600;
     font-size: 14px;
-    line-height: 19.5px;
+    line-height: 25px;
     color: #4F556A;
     margin-bottom: 10px;
     font-style: italic;
@@ -1089,6 +1096,7 @@ display: block;
     display: flex;
     gap: 40px;
     text-align: start;
+    margin-top: -10px;
 }
 
 .widget-blog-update .widget-post {
@@ -1149,10 +1157,10 @@ display: block;
 /* page-title-home2 */
 .page-title-home2 .page-title-container {
     width: 100%;
-    max-width: 1110px;
+    max-width: 1094px;
     margin: auto;
     padding-top: 101px;
-    padding-bottom: 193px;
+    padding-bottom: 191px;
 }
 
 .page-title-home2 .swiper-slide {
@@ -1182,7 +1190,7 @@ display: block;
     font-size: 18px;
     line-height: 29px;
     color: #4F556A;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
     width: 100%;
     max-width: 466px;
 }
@@ -1190,12 +1198,16 @@ display: block;
 .page-title-home2 .widget-button {
     padding: 15px 24px;
     border: 2px solid #C0F8E8;
-    margin-right: 10px;
+    margin-right: 7px;
+    width: 184px;
+    text-align: center;
 }
 
+.page-title-home2 .widget-button.active ,
 .page-title-home2 .widget-button:hover {
     color: #C0F8E8;
     background-color: #042181;
+    border: none;
 }
 
 .page-title-home2 .swiper-button {
@@ -1217,12 +1229,12 @@ display: block;
 
 /* widget-our-service */
 .widget-our-service {
-    padding-top: 100px;
+    padding-top: 109px;
 }
 
 .widget-our-service .widget-our-service-content {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1385px;
     margin: auto;
 }
 
@@ -1274,15 +1286,15 @@ display: block;
 }
 
 .widget-our-service .widget-slide-style1 .swiper-button-prev {
-    top: -140px;
+    top: -155px;
     left: auto;
-    right: 200px;
+    right: 323px;
 }
 
 .widget-our-service .widget-slide-style1 .swiper-button-next {
-    top: -140px;
+    top: -155px;
     left: auto;
-    right: 100px;
+    right: 243px;
 }
 
 .swiper-button-next.swiper-button-disabled,
@@ -2687,7 +2699,7 @@ button:focus {
 
 
 .right {
-    right: 70px;
+    right: 52px;
     top: 293px;
     border: 1px solid #849494;
     background-color: transparent;

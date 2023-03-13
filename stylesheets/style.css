@@ -502,7 +502,7 @@ color: #a0a0a0;
 
 /* header-ct-right */
 .header-ct-right {
-    padding-right: 100px;
+    padding-right: 84px;
     gap: 30px;
     align-items: center;
 }
@@ -524,8 +524,7 @@ color: #a0a0a0;
 }
 
 .show-search .icon-show-search {
-    margin-right: 5px;
-    font-size: 18px;
+    font-size: 22px;
     color: #181818;
     text-align: center;
     line-height: 70px;
@@ -574,6 +573,7 @@ color: #a0a0a0;
 .header-ct-right .header-btn .widget-button span {
     position: absolute;
     left: 25px;
+    top: 16px;
 }
 
 .header-ct-right .header-btn .widget-button:hover span::before {

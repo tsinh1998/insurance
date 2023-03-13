@@ -137,16 +137,16 @@
 /* page-title-home1 */
 .page-title-home1 {
     background-image: url(../images/page-title/pt.png);
-    background-position: 88% 80px;
+    background-position: 95.4% 108px;
     background-repeat: no-repeat;
     margin-top: 74px;
 }
 
 .page-title-home1 .content {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1385px;
     margin: auto;
-    padding-top: 195px;
+    padding-top: 196px;
     padding-bottom: 374px;
 }
 
@@ -173,7 +173,7 @@
     font-size: 20px;
     line-height: 32px;
     color: #4F556A;
-    margin-bottom: 66px;
+    margin-bottom: 50px;
 }
 
 .page-title-home1 .content > a {
@@ -193,11 +193,11 @@
     font-size: 14px;
     line-height: 19.5px;
     color: #4F556A;
-    margin-top: 56px;
+    margin-top: 40px;
 }
 
 .page-title-home1 .text a {
-    padding-left: 10px;
+    padding-left: 8px;
     color: #3AC19B;
     display: inline-block;
 }

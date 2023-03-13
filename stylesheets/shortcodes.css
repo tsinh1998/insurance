@@ -1229,7 +1229,7 @@ display: block;
 
 /* widget-our-service */
 .widget-our-service {
-    padding-top: 109px;
+    padding-top: 104px;
 }
 
 .widget-our-service .widget-our-service-content {
@@ -1311,13 +1311,13 @@ display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -298px;
+    margin-bottom: -282px;
 }
 
 .widget-service-1-item {
     padding: 100px 0 397px 0 ;
     display: flex;
-    max-width: 1400px;
+    max-width: 1383px;
     margin: auto;
     justify-content: space-between;
 }
@@ -1360,16 +1360,18 @@ display: block;
 }
 
 .widget-swiper-pagination .swiper-pagination {
-    top: 600px;
+    top: 590px;
     bottom: auto;
     width: auto;
-    margin-left: calc(((100vw - 1470px) / 2 ) + 20px );
+    margin-left: calc(((100vw - 1470px) / 2 ) + 30px );
 }
 
 .widget-swiper-pagination .swiper-pagination .swiper-pagination-bullet {
     border-radius: unset;
     width: 60px;
     height: 3px;
+    background-color: #042181;
+    opacity: 1;
 }
 
 .widget-swiper-pagination .swiper-pagination .swiper-pagination-bullet-active {
@@ -1461,7 +1463,7 @@ display: block;
     font-size: 45px;
     text-align: center;
     margin-top: 122.5px;
-    margin-bottom: 79.5px;
+    margin-bottom: 74.5px;
     position: relative;
     z-index: 2;
 }
@@ -1502,6 +1504,7 @@ display: block;
     color: #FFFFFF;
     opacity: 0.5;
     padding-left: 20px;
+    margin-bottom: -3px;
 }
 
 .widget-project-1 .widget-project-1-item .text {
@@ -1546,7 +1549,7 @@ display: block;
 
 .widget-project-1 .widget-swiper-pagination .swiper-pagination {
     top: unset;
-    bottom: 50px;
+    bottom: 98px;
     margin: auto;
     width: 100%;
     text-align: center;

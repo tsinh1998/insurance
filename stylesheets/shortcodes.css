@@ -364,7 +364,7 @@
     line-height: 22px;
     color: #4F556A;
     margin-top: 24px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 }
 
 .widget-about-us ul {
@@ -700,7 +700,7 @@
 /* widget-counter */
 .widget-counter {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1400px;
     margin: auto;
     text-align: center;
 }
@@ -1016,16 +1016,17 @@
 
 .widget-testimonial-item span {
     color: #3AC19B;
+    font-size: 10px;
 }
 
 .widget-testimonial-item p {
-    margin-top: 10px;
+    margin-top: 9px;
     font-family: 'Raleway',sans-serif;
     font-weight: 600;
     font-size: 14px;
-    line-height: 25px;
+    line-height: 20px;
     color: #4F556A;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-style: italic;
 }
 
@@ -1033,7 +1034,7 @@
     font-family: 'Raleway',sans-serif;
     font-weight: 900;
     font-size: 20px;
-    line-height: 23.5px;
+    line-height: 23px;
     color: #042181;
     margin-bottom: 4px;
 }
@@ -1409,7 +1410,7 @@
     position: relative;
     border-bottom: 4px solid #C0F8E8;
     overflow: hidden;
-    margin-bottom: 153px;
+    margin-bottom: 161px;
     z-index: -3;
 }
 
@@ -1812,7 +1813,8 @@
 .widget-our-team-item-wrap {
     position: absolute;
     left: 20px;
-    bottom: 20px;
+    bottom: 18px;
+    text-align: start;
 }
 
 .widget-our-team-item h3 {
@@ -1835,7 +1837,7 @@
     position: absolute;
     right: 0;
     top: auto;
-    bottom: 0;
+    bottom: -2px;
     font-size: 24px;
     padding: 15px;
     background-color: #C0F8E8;
@@ -1860,11 +1862,13 @@
 }
 
 .widget-our-team .widget-social {
+    font-size: 14px;
+    gap: 5px;
     flex-direction: column;
     position: absolute;
     bottom: 0;
     right: -63px;
-    padding: 12px;
+    padding: 7px 10px 10px;
     background-color: #C0F8E8;
     border-radius: 20px 0 0 0;
     opacity: 0;
@@ -2110,7 +2114,7 @@
     background-size: cover;
     padding-top: 106px;
     padding-bottom: 332px;
-    margin-bottom: -230px;
+    margin-bottom: -232px;
 }
 
 .widget-request-quote-wrap span {
@@ -2146,7 +2150,7 @@
 }
 
 .widget-request-quote-wrap .widget-button {
-    padding: 15px 24px;
+    padding: 13px 24px;
     background-color: transparent;
     border: 2px solid #C0F8E8;
     color: #C0F8E8;
@@ -2198,6 +2202,7 @@
     line-height: 25.5px;
     color: #4F556A;
     opacity: 1;
+    height: 57px;
 }
 
 .widget-request-quote-form form .email-number {
@@ -2210,9 +2215,10 @@
 }
 
 .widget-request-quote-form form .nice-select {
+    height: 57px;
     color: #042181;
     border: 1px solid #E2E2E2;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
     font-size: 16px;
     opacity: 1;
 }
@@ -2234,7 +2240,7 @@
 }
 
 .widget-request-quote-form .form-content .content-wrap {
-    padding-bottom: 30px;
+    padding-bottom: 28px;
 }
 
 .widget-request-quote-form .form-content .address,
@@ -2295,7 +2301,7 @@
     font-size: 16px;
     line-height: 25.5px;
     color: #4F556A;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -2309,12 +2315,15 @@
 }
 
 .widget-job .widget-job-item .tag a {
-    padding: 6px 10px;
-    margin-right: 9px;
+    width: 74px;
+    padding: 6px 11px;
+    text-align: center;
+    margin-right: 6px;
     background-color: #C0F8E8;
     font-weight: 700;
     font-size: 12px;
     line-height: 14px;
+    text-transform: none;
 }
 
 .widget-job .widget-job-item .tag a:hover {

@@ -991,6 +991,7 @@ color: #a0a0a0;
 .page-title .page-title-container {
     max-width: 1400px;
     margin: auto;
+    padding-left: 8px;
 }
 
 .page-title h1 {
@@ -2188,19 +2189,20 @@ color: #a0a0a0;
 }
 
 .file-download .icon {
-    font-size: 32px;
+    font-size: 35px;
     margin-right: 10px;
 }
 
 .file-download .file-item {
+    width: 241px;
     font-family: 'Hind',sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 22.5px;
     color: #4F556A;
     background-color: #F8F8F8;
-    padding: 18px 16px;
-    margin-bottom: 27px;
+    padding: 11px 13px;
+    margin-bottom: 33px;
     display: flex;
     align-items: center;
     transition: all 0.3s ease-in-out;
@@ -2748,20 +2750,36 @@ color: #a0a0a0;
 
 .widget-get-quote.style-2 .get-quote-box {
     top: 100px;
-    right: 245px;
+    right: 251px;
     padding: 0;
     border-radius: 0;
+    max-width: 531px;
+    border: none;
 }
 
 .widget-get-quote.style-2 .get-quote-box .tab-container .tabs {
     background-color: #FFFFFF;
     gap: 0;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
+.widget-get-quote.style-2 #health .widget-request-quote-form form input {
+    height: 58px;
+    margin-bottom: 30px;
+}
+
+/* .widget-get-quote.style-2 #health .widget-request-quote-form form textarea {
+    height: 58px;
+    margin-bottom: 30px;
+} */
+
 .widget-get-quote.style-2 .get-quote-box .tab-container .tabs button {
-    width: 100px;
+    width: 100%;
+    padding: 0;
     box-shadow: none;
     border-bottom: 1px solid #EFEFEF;
+    padding-bottom: 20px;
 }
 
 .widget-get-quote.style-2 .get-quote-box .tab-container .tabs button:hover,
@@ -2853,6 +2871,11 @@ color: #a0a0a0;
     padding-top: 100px;
 }
 
+.home-03 .widget-testimonial .widget-testimonial-wrap {
+    max-width: 1400px;
+    margin: auto;
+}
+
 .home-03 .widget-testimonial .swiper-slide {
     margin-bottom: 100px;
 }
@@ -2862,19 +2885,19 @@ color: #a0a0a0;
 }
 
 .home-03 .widget-testimonial .widget-testimonial-item .infor {
-    margin-top: 10px;
+    margin-top: 7px;
 }
 
 .home-03 .widget-testimonial .widget-swiper-pagination .swiper-pagination {
     width: 100%;
     margin: 0;
     top: auto;
-    bottom: 65px;
+    bottom: 42px;
 }
 
-
-
-
+.home-03 .widget-blog-update {
+    padding-top: 56px;
+}
 
 .home-03 .widget-blog-update-wrap .widget-post .image::before,
 .home-03 .widget-blog-update-wrap .widget-post .image::after {
@@ -2968,6 +2991,7 @@ color: #a0a0a0;
 
 .about-us-page .widget-about-us-wrap .poster {
     width: 100%;
+    top: 0;
     padding: 0;
     max-height: 643px;
     background-image: url(../images/about-us/img-03.jpg);
@@ -2997,8 +3021,8 @@ color: #a0a0a0;
     position: absolute;
     bottom: 0;
     right: 0;
-    transform: translateY(50%);
-    padding: 20px;
+    transform: translateY(48%);
+    padding: 15px 20px;
     background: #FFFFFF;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     border-radius: 50px 0px 0px 0px;
@@ -3010,7 +3034,7 @@ color: #a0a0a0;
 
 .about-us-page .widget-about-us-wrap .poster .sub-content .widget-block-1 {
     font-size: 40px;
-    padding: 20px;
+    padding: 21px 20px;
     margin-right: 13px;
 }
 
@@ -3043,7 +3067,7 @@ color: #a0a0a0;
     font-size: 20px;
     line-height: 23.5px;
     color: #042181;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
     margin-top: 20px;
 }
 
@@ -3065,7 +3089,7 @@ color: #a0a0a0;
     font-family: 'Hind',sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22.5px;
+    line-height: 22px;
     color: #4F556A;
     margin-bottom: 14px;
     margin-top: 0;
@@ -3073,20 +3097,26 @@ color: #a0a0a0;
 }
 
 .about-us-page .widget-about-us-wrap .phone {
-    transform: translateY(10px);
+    padding-top: 2px;
 }
 
 .about-us-page .widget-about-us-wrap .phone .phone-number {
     color: #3AC19B;
+    font-size: 22px;
+    margin-top: -5px;
 }
 
 .about-us-page .widget-about-us-wrap .file-download {
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 22px;
+    margin-bottom: 0px;
+}
+
+.about-us-page .widget-counter.counter-style-1 .widget-counter-wrap {
+    margin-top: 100px;
 }
 
 .about-us-page .widget-testimonial {
-    padding: 100px 0;
+    padding: 70px 0 93px;
 }
 
 /* our-team-page
@@ -3123,7 +3153,7 @@ color: #a0a0a0;
     font-weight: 900;
     font-size: 15px;
     line-height: 17.5px;
-    padding: 15px 46.5px;
+    padding: 14px 52px;
     background-color: #042181;
     color: #C0F8E8;
 }
@@ -3156,7 +3186,7 @@ color: #a0a0a0;
     width: 100%;
     max-width: 1169px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 36px;
     background-color: #FFFFFF;
     padding: 30px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
@@ -3177,7 +3207,7 @@ color: #a0a0a0;
     font-family: 'Raleway',sans-serif;
     font-weight: 900;
     font-size: 20px;
-    line-height: 23.5px;
+    line-height: 23px;
     color: #042181;
     margin-bottom: 14px;
 }
@@ -3191,15 +3221,15 @@ color: #a0a0a0;
     font-family: 'Hind',sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22.5px;
+    line-height: 22px;
     color: #4F556A;
     margin-bottom: 14px;
 }
 
 .team-detail .infor .infor-item {
-    padding-bottom: 20px;
+    padding-bottom: 14px;
     border-bottom: 1px solid #EFEFEF;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
 }
 
 .team-detail .infor .infor-item:last-child {
@@ -3221,10 +3251,14 @@ color: #a0a0a0;
     font-family: 'Hind',sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22.5px;
+    line-height: 22px;
     color: #4F556A;
     margin-bottom: 4px;
     list-style: inside circle;
+}
+
+.team-detail .infor .infor-item ul li::marker {
+    margin-right: 3px;
 }
 
 .team-detail .infor .infor-item .widget-social a {
@@ -3257,6 +3291,11 @@ color: #a0a0a0;
     width: 100%;
 }
 
+.widget-request-quote-form form textarea {
+    height: 140px;
+    margin-bottom: 17px;
+}
+
 /* Testimonials
 ------------------------------ */
 .testimonials .page-title {
@@ -3271,7 +3310,7 @@ color: #a0a0a0;
 .testimonials .widget-business-customers .poster {
     max-width: 1400px;
     margin: auto;
-    margin-bottom: -135px;
+    margin-bottom: -144px;
     position: relative;
 }
 
@@ -3287,13 +3326,14 @@ color: #a0a0a0;
 }
 
 .testimonials .widget-business-customers-wrap .widget-slide-style1 {
-    width: calc((100vw - ((100vw - 1470px))) + 30px);
+    width: unset;
+    margin-left: calc((100vw - 1080px) / 2 - 8px);
+    /* width: calc((100vw - ((100vw - 1470px))) + 30px); */
 }
 
 .testimonials .widget-business-customers-wrap .widget-slide-style1 .swiper {
     margin-right: -400px;
 }
-
 
 .testimonials .widget-business-customers .widget-testimonial-item.style1 .heading img {
     transform: none;
@@ -3304,16 +3344,21 @@ color: #a0a0a0;
 }
 
 .testimonials .widget-business-customers .widget-testimonial-item.style1 .heading {
-    padding-left: 160px;
+    padding-left: 150px;
+    padding-bottom: 17px;
+    margin-bottom: 17px;
 }
 
-.testimonials .widget-business-customers-wrap .widget-testimonial-item.style1 {
-    text-align: start;
+.testimonials .widget-business-customers .widget-testimonial-item.style1 .heading .info {
+    margin-top: 2px;
 }
 
 .testimonials .widget-business-customers .widget-testimonial-item.style1 {
     margin-top: 35px;
     background-color: #FFFFFF;
+    text-align: start;
+    padding-top: 30px;
+    padding-bottom: 18px;
 }
 
 .testimonials .widget-business-customers .widget-project-slide .swiper-slide {
@@ -3322,20 +3367,32 @@ color: #a0a0a0;
 }
 
 .testimonials .widget-business-customers .widget-slide-style1 .swiper-button-next {
-    top: 38%;
+    top: 36%;
     left: -80px;
 }
 
 .testimonials .widget-business-customers .widget-slide-style1 .swiper-button-prev {
     left: -160px;
-    top: 38%;
+    top: 36%;
 }
 
 .testimonials .widget-testimonial-item {
     margin-bottom: 40px;
 }
 
+.testimonials .widget-business-customers .widget-testimonial-item p {
+    line-height: 26px;
+    font-style: normal;
+}
+
+.testimonials .widget-testimonial-item.style1 .heading .icon-quotes {
+    top: 4px;
+    right: 20px;
+}
+
 .widget-loading {
+    display: flex;
+    justify-content: center;
     font-family: 'Hind';
     font-weight: 400;
     font-size: 16px;
@@ -3348,10 +3405,15 @@ color: #a0a0a0;
     margin-right: 20px;
     font-size: 20px;
     color: #4F556A;
+    transform: rotate(180deg);
 }
 
 /* pricing-table 
 -----------------------------------*/
+.pricing-table.main-content {
+    padding-bottom: 78px;
+}
+
 .pricing-table .page-title {
     background-image: url(../images/page-title/testimonial.jpg);
 }
@@ -3376,9 +3438,9 @@ color: #a0a0a0;
 }
 
 .widget-block-search-1 .widget-block-search-1-wrap button {
-    padding-left: 15px;
+    padding-left: 21px;
     color: #4F556A ;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .widget-block-search-1 .widget-block-search-1-wrap input {
@@ -3387,6 +3449,7 @@ color: #a0a0a0;
     line-height: 26px;
     color: #4F556A;
     opacity: 1;
+    padding-left: 3px;
 }
 
 .faqs .widget-faq > p {
@@ -3403,7 +3466,8 @@ color: #a0a0a0;
 }
 
 .faqs .widget-faq p span.icon-calling::before {
-    margin-right: 10px;
+    margin-right: 12px;
+    font-size: 18px;
     color: #042181;
 }
 
@@ -3411,8 +3475,8 @@ color: #a0a0a0;
     padding: 100px 0;
     background: url(../images/faq/background.jpg);
     border-radius: 150px 0 0 0;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 78px;
+    margin-bottom: 74px;
 }
 
 .faqs .widget-faq.style-1 .main-title {
@@ -3468,6 +3532,18 @@ color: #a0a0a0;
 .widget-request-quote-form.style-1 form {
     border: none;
     width: 100%;
+}
+
+.faqs .widget-request-quote-form form input {
+    margin-bottom: 30px;
+}
+
+.faqs .widget-request-quote-form form .nice-select {
+    margin-bottom: 31px;
+}
+
+.faqs .widget-request-quote-form form textarea {
+    margin-bottom: 28px;
 }
 
 /* Career
@@ -3534,7 +3610,7 @@ color: #a0a0a0;
     background-attachment: fixed;
     background-image: url(../images/join-team/Icon.png);
     background-repeat: no-repeat;
-    background-position: 81.45% 141px;
+    background-position: 75% 141px;
 }
 
 .carers .widget-join-team-wrap {

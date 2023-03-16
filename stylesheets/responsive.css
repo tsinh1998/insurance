@@ -48,10 +48,7 @@
 
 /* page-title-home1 */
 @media (max-width:1400px) {    
-    .page-title-home1 .content {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
+    .page-title-home1 .content ,
     .widget-title-section-1,
     .widget-title-section {
         margin-left: 1em;
@@ -62,6 +59,13 @@
     .page-title-home1 {
         background-size: cover;
         background-position: center;
+    }
+    .page-title-home1::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1018px;
+        background-color: rgba(255, 255, 255, 0.75);
     }
     .page-title-home1 h1 {
         font-size: 60px;
@@ -86,7 +90,10 @@
     .widget-about-us {
         flex-wrap: wrap;
     }
-    .widget-about-us .content {
+    .widget-about-us .content p,
+    .widget-about-us .content ul,
+    .widget-about-us .content .phone,
+    .widget-about-us .content .button {
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -114,7 +121,7 @@
 }
 
 /* widget-project */
-@media (max-width:1470px) {    
+@media (max-width:1400px) {    
     .widget-project .widget-project-slide,
     .widget-project-content p {
         width: unset;
@@ -130,7 +137,7 @@
         padding-left: 1em;
     }
     .widget-choose-us .widget-choose-us-item {
-        width: 48.4%;
+        width: 47%;
     }
     .widget-choose-us.style-1 .widget-choose-us-slide {
         margin: 0;
@@ -143,9 +150,10 @@
         width: unset;
     }
 }
-@media (max-width:1280px) {    
+@media (max-width:750px) {    
     .widget-choose-us .widget-choose-us-item {
         width: 100%;
+        min-height: unset;
     }
 }
 
@@ -165,6 +173,7 @@
     .widget-get-quote .get-quote-box {
         bottom: 0;
         top: unset;
+        right: 1em;
     }
     .get-quote-wrap .get-quote-poster {
         display: none;
@@ -201,6 +210,11 @@
     .widget-get-quote.style-2 .get-quote-wrap {
         flex-wrap: wrap;
         justify-content: center;
+    }
+}
+@media (max-width:1000px) {  
+    .get-quote-wrap {
+        padding-top: 230px;
     }
 }
 @media (max-width:550px) {  
@@ -283,7 +297,8 @@
 
 /* widget-newsletter */
 @media (max-width:560px) {  
-    .newsletter {
+    .newsletter .newsletter-note,
+    .newsletter form {
         margin-left: 1em;
         margin-right: 1em;
     }

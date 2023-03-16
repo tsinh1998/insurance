@@ -767,8 +767,9 @@
 
 .widget-get-quote .get-quote-box {
     position: absolute;
-    right: 253px;
+    /* right: 253px; */
     top: 333px;
+    right: calc((((100vw - 1400px) / 2)) + 10px );
 }   
 
 .get-quote-wrap {
@@ -1282,7 +1283,7 @@
     font-family: 'Hind',sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22.5px;
+    line-height: 22px;
     color: #4F556A;
     margin-bottom: 20px;
 }
@@ -2095,7 +2096,7 @@
 .widget-claim-settlement-item .widget-post .all-content p {
     margin-top: 16px;
     margin-bottom: 0;
-    line-height: 25.5px;
+    line-height: 26px;
 }
 
 .widget-claim-settlement-item .widget-post .all-content p a {
@@ -2218,7 +2219,7 @@
     height: 57px;
     color: #042181;
     border: 1px solid #E2E2E2;
-    margin-bottom: 22px;
+    margin-bottom: 30px;
     font-size: 16px;
     opacity: 1;
 }
@@ -2316,7 +2317,8 @@
 
 .widget-job .widget-job-item .tag a {
     width: 74px;
-    padding: 6px 11px;
+    padding: 5px 10px;
+    border: 1px solid #C0F8E8;
     text-align: center;
     margin-right: 6px;
     background-color: #C0F8E8;
@@ -2361,10 +2363,6 @@
 
 .widget-job .widget-job-item:hover .apply {
     background-color: #C0F8E8;
-}
-
-.widget-job .widget-job-item:hover .tag a {
-    border: 1px solid #C0F8E8;
 }
 
 /* widget-faq */
@@ -2585,7 +2583,6 @@
     font-size: 20px;
     line-height: 23px;
     color: #C0F8E8;
-    margin-bottom: 2px;
 }
 
 .widget-block-quote .infor {
@@ -2594,6 +2591,7 @@
     font-size: 14px;
     line-height: 20px;
     color: #C0F8E8;
+    margin-top: 2px;
 }
 
 /* widget-cta */

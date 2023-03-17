@@ -1,9 +1,32 @@
-
 /* 
 
     Reset
     Header
-    
+    header-mobile
+    Footer
+    Page-title
+    ride-sidebar
+    Blog-01 
+    Blog-02 
+    Blog-detail
+    blog-detail-no-sidebar
+    Contact-us
+    Eror-404
+    home-1
+    home-2
+    home-3
+    about-us-page
+    our-team-page
+    team-detail
+    Testimonials
+    pricing-table
+    FAQs
+    Career
+    services-list
+    services-grid
+    services-grid-1
+    services-detail
+    services-detail-1
 
 */
 
@@ -103,26 +126,26 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
     line-height: 1;
-    cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
-    -webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
+    cursor: pointer; 
+    -webkit-appearance: button; 
     border: none;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-    padding: 0; /* Addresses excess padding in IE8/9 */
+    padding: 0; 
 }
 
 input[type="search"] {
-    -webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
+    -webkit-appearance: textfield;
 }
 
-input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+input[type="search"]::-webkit-search-decoration { 
     -webkit-appearance: none;
 }
 
 button::-moz-focus-inner,
-input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+input::-moz-focus-inner { 
     border: 0;
     padding: 0;
 }
@@ -334,14 +357,14 @@ color: #a0a0a0;
 ------------------------------------------------------ */
 #header {
     width: 100%;
-    position: fixed;
+    position: relative;
     top: 0%;
     background-color: #FFFFFF;
     z-index: 100;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-#header .sticky-area-wrap {
+#header .sticky-area-wrap .inner-header {
     width: 100%;
     max-width: 1920px;
     margin: auto;
@@ -581,12 +604,32 @@ color: #a0a0a0;
 }
 
 /* sub-header */
-.sub-header {
-    background-color: #C0F8E8;
+#header.header-home-03 {
+    margin-bottom: -135px;
 }
 
-.sub-header.hide {
-    display: none;
+.header-home-03 .sticky-area-wrap.fixed-show {
+    background-color: #181818;
+}
+
+.sticky-area-wrap.fixed-hide {
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    z-index: 9989;
+    background-color: #fff;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.07);
+    transition: all ease 0.4s;
+}
+
+.sticky-area-wrap.fixed-show {
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.sub-header {
+    background-color: #C0F8E8;
 }
 
 .sub-header-wrap {
@@ -975,14 +1018,12 @@ color: #a0a0a0;
 ----------------------------------------------- */
 .page-title {
     width: 100%;
-    margin-top: 74px;
     padding-top: 131px;
     padding-bottom: 139px;
     position: relative;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 470px;
-    /* background-position: center; */
 }
 
 .blog .page-title {
@@ -1526,9 +1567,7 @@ color: #a0a0a0;
 }
 
 .widget-block-before:hover::after {
-    left: auto;
-    right: -36px;
-    transition: all 0.3s ease-in-out;
+    transform: translateX(110px);
 }
 
 .blog .main-content-wrap .widget-post {
@@ -2235,10 +2274,6 @@ color: #a0a0a0;
 
 /* home-02
 ------------------------------------------- */
-.page-title-home2 {
-    margin-top: 124px;
-}
-
 .home-02.main-content {
     padding-bottom: 0;
 }
@@ -2865,11 +2900,6 @@ color: #a0a0a0;
     margin-bottom: 30px;
 }
 
-/* .widget-get-quote.style-2 #health .widget-request-quote-form form textarea {
-    height: 58px;
-    margin-bottom: 30px;
-} */
-
 .widget-get-quote.style-2 .get-quote-box .tab-container .tabs button {
     width: 100%;
     padding: 0;
@@ -3266,7 +3296,6 @@ color: #a0a0a0;
     background-image: url(../images/page-title/team-detail.jpg);
 }
 
-/* main-content */
 .team-detail.main-content {
     display: flex;
     flex-wrap: wrap;
@@ -3425,7 +3454,6 @@ color: #a0a0a0;
 .testimonials .widget-business-customers-wrap .widget-slide-style1 {
     width: unset;
     margin-left: calc((100vw - 1080px) / 2 - 8px);
-    /* width: calc((100vw - ((100vw - 1470px))) + 30px); */
 }
 
 .testimonials .widget-business-customers-wrap .widget-slide-style1 .swiper {
@@ -3844,7 +3872,7 @@ color: #a0a0a0;
     color: #36a7e3;
 }
 
-/* services list
+/* services-list
 -------------------------------------------- */
 .services-list.main-content {
     padding-bottom: 77px;
@@ -3936,7 +3964,7 @@ color: #a0a0a0;
     background-color: #F5F5F5;
 }
 
-/* services grid
+/* services-grid
 -------------------------------------------- */
 .services-grid.main-content {
     padding-bottom: 79px;
@@ -4002,7 +4030,7 @@ color: #a0a0a0;
     margin-bottom: 103px;
 }
 
-/* services grid-1
+/* services-grid-1
 -------------------------------------------- */
 .services-grid-1.main-content {
     padding-bottom: 79px;

@@ -19,6 +19,8 @@
   counter
   tabs
   ranger
+  dropOptionForm
+  parent
   preload
 
 */
@@ -27,18 +29,39 @@
 
   'use strict'
 
-  var headerFixed = function() {        
-        $(window).on('load scroll', function(){                
-          if ($(window).scrollTop() >= 100) {
-            $('.sub-header').addClass('hide');
-            $('.header-home-03').addClass('background-black');
+  var headerFixed = function() {
+    if ( $('header').hasClass('header-fixed') ) {
+        var nav = $('.sticky-area-wrap');
+
+        if ( nav.length ) {
+            var
+            offsetTop = nav.offset().top,
+            headerHeight = nav.height(),
+            injectSpace = $('<div>', {
+                height: headerHeight
+            });
+            if ( $('header').hasClass('header-default') ) {
+                injectSpace.insertAfter(nav)
+            }
+
+            $(window).on('load scroll', function(){
+                if ( $(window).scrollTop() > offsetTop + headerHeight ) {
+                    nav.addClass('fixed-hide');
+                    injectSpace.show();
+                } else {
+                    nav.removeClass('fixed-hide');
+                    injectSpace.hide();
+                }
+
+                if ( $(window).scrollTop() > 500 ) {
+                    nav.addClass('fixed-show');
+                } else {
+                    nav.removeClass('fixed-show');
+                }
+            })
         }
-        else {
-            $('.sub-header').removeClass('hide');
-            $('.header-home-03').removeClass('background-black');
-        }
-        })            
-  }
+    }     
+};
 
   var showsearch = function() {
       $(".icon-show-search").click(function(){

@@ -1,11 +1,37 @@
 
 /* 
 
-    Button
+    grid-tf-container
     Preloading
     Gotop button
-    widget-post
-
+    widget-blog-pagination
+    page-title-home1
+    title
+    widget-service
+    widget-about-us
+    widget-project
+    widget-slide-style1
+    widget-choose-us
+    widget-counter
+    widget-get-quote
+    widget-testimonials
+    widget-blog-update
+    page-title-home2
+    widget-our-service
+    widget-sevice-1
+    widget-pricing
+    widget-our-team
+    widget-blog-update
+    widget-claim-settlement
+    widget-request-quote
+    widget-job
+    widget-faq
+    widget-business-insurance
+    widget-tips
+    widget-cta
+    widget-checkbox-sale
+    slider-home-2 
+    
 */
 
 
@@ -139,7 +165,6 @@
     background-image: url(../images/page-title/pt.png);
     background-position: 95.4% 108px;
     background-repeat: no-repeat;
-    margin-top: 74px;
 }
 
 .page-title-home1 .content {
@@ -426,9 +451,7 @@
 }
 
 .widget-about-us .poster {
-    /* flex-grow: 1; */
     padding-left: 121px;
-    /* padding-right: 98px; */
     top: -7px;
     position: relative;
 }
@@ -629,8 +652,6 @@
     left: -110px;
 }
 
-
-
 /* widget-choose-us */
 .widget-choose-us {
     width: 100%;
@@ -767,7 +788,6 @@
 
 .widget-get-quote .get-quote-box {
     position: absolute;
-    /* right: 253px; */
     top: 333px;
     right: calc((((100vw - 1400px) / 2)) + 10px );
 }   
@@ -1006,7 +1026,6 @@
 }
 
 .widget-testimonial-item {
-    /* max-width: 320px; */
     padding: 20px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -1099,7 +1118,6 @@
     display: flex;
     gap: 40px;
     text-align: start;
-    /* margin-top: -10px; */
 }
 
 .widget-blog-update .widget-post {
@@ -2686,6 +2704,7 @@
 	width: 8px;
 }
 
+/* slider-home-2 */
 .parent {
     width: 100%;
 }

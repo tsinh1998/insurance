@@ -30,7 +30,6 @@
     widget-tips
     widget-cta
     widget-checkbox-sale
-    slider-home-2 
     
 */
 
@@ -254,6 +253,7 @@
     line-height: 16.5px;
     color: #3AC19B;
     position: relative;
+    text-transform: uppercase;
 }
 
 .line-after::after {
@@ -366,6 +366,7 @@
 
 .widget-service-item .widget-button {
     padding-left: 36px;
+    padding-right: 36px;
     font-size: 16px;
     line-height: 19px;
 }
@@ -612,6 +613,10 @@
     right: -1px;
 }
 
+.widget-project .swiper-button {
+    border: 2px solid #C0F8E8;
+}
+
 /* widget-slide-style1 */
 .widget-slide-style1 {
     position: relative;
@@ -635,7 +640,7 @@
 }
 
 .widget-slide-style1 .swiper-button:hover {
-    color: #fff;
+    color: #C0F8E8;
     background-color: #042181;
 }
 
@@ -982,10 +987,14 @@
     margin-bottom: 33px;
 }
 
+.get-quote-box .tab-container #life .widget-request-quote-form ,
+.get-quote-box .tab-container #vehicles .widget-request-quote-form ,
 .get-quote-box .tab-container #health .widget-request-quote-form {
     box-shadow: none;
 }
 
+.get-quote-box .tab-container #life form,
+.get-quote-box .tab-container #vehicles form,
 .get-quote-box .tab-container #health form {
     padding: 0;
     border: 0;
@@ -1217,7 +1226,7 @@
 }
 
 .page-title-home2 .widget-button {
-    padding: 15px 24px;
+    padding: 15px 22px;
     border: 2px solid #C0F8E8;
     margin-right: 7px;
     width: 184px;
@@ -1228,24 +1237,203 @@
 .page-title-home2 .widget-button:hover {
     color: #C0F8E8;
     background-color: #042181;
-    border: none;
+    border: 2px solid #042181;
 }
 
-.page-title-home2 .swiper-button {
-    margin: 0 60px;
-}
-
-.page-title-home2 .swiper-button::after {
+.page-title-home2 button span {
     font-size: 24px;
     color: #042181;
-    padding: 22px 22px 21px 21px;
-    border: 2px solid #042181;
-    transition: all 0.3s ease-in-out;
+    transition: 0.5s;
 }
 
-.page-title-home2 .swiper-button:hover::after {
-    color: #fff;
+.page-title-home2 .right {
+    right: 52px;
+    top: 293px;
+    border: 2px solid #042181;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.page-title-home2 .left {
+    transform: rotate(180deg);
+    top: 293px;
+    left: 70px;
+    border: 2px solid #042181;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+.page-title-home2 button:hover {
     background-color: #042181;
+}
+
+.page-title-home2 button:hover span {
+    color: #fff;
+}
+
+.parent {
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.page-title-home2 button {
+  position: absolute;
+  z-index: 50;
+  width: 67px;
+  height: 67px;
+  overflow: hidden;
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid #042181;
+}
+button:focus {
+  outline-width: 0;
+}
+
+svg {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+circle {
+  stroke: #fff;
+  fill: none;
+  transition: 0.3s;
+}
+
+#svg1 circle {
+  transition-timing-function: linear;
+}
+
+#svg2 circle {
+  transition-timing-function: linear;
+}
+
+.circle1 {
+  transition-delay: 0.05s;
+}
+
+.circle2 {
+  transition-delay: 0.1s;
+}
+
+.circle3 {
+  transition-delay: 0.15s;
+}
+
+.circle4 {
+  transition-delay: 0.2s;
+}
+
+.circle5 {
+  transition-delay: 0.25s;
+}
+
+.circle6 {
+  transition-delay: 0.3s;
+}
+
+.circle7 {
+  transition-delay: 0.35s;
+}
+
+.circle8 {
+  transition-delay: 0.4s;
+}
+
+.circle9 {
+  transition-delay: 0.45s;
+}
+
+.circle10 {
+  transition-delay: 0.05s;
+}
+
+.circle11 {
+  transition-delay: 0.1s;
+}
+
+.circle12 {
+  transition-delay: 0.15s;
+}
+
+.circle13 {
+  transition-delay: 0.2s;
+}
+
+.circle14 {
+  transition-delay: 0.25s;
+}
+
+.circle15 {
+  transition-delay: 0.3s;
+}
+
+.circle16 {
+  transition-delay: 0.35s;
+}
+
+.circle17 {
+  transition-delay: 0.4s;
+}
+
+.circle18 {
+  transition-delay: 0.45s;
+}
+
+.slide1 {
+  background-image: url(../images/page-title/home-2.jpg);
+}
+
+.slide2 {
+  background-image: url(../images/page-title/home-2.jpg);
+}
+
+.slide3 {
+  background-image: url(../images/page-title/home-2.jpg);
+}
+.slide4 {
+    background-image: url(../images/page-title/home-2.jpg);
+  }
+
+.slide1, .slide2, .slide3 {
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: 1.4s;
+}
+
+.tran {
+  transform: scale(1.3);
+}
+
+.up1 {
+  z-index: 30;
+}
+
+.up2.upper {
+  z-index: 40;
+}
+
+.steap {
+  stroke-width: 0;
+}
+
+.streak {
+    stroke-width: 260px;
 }
 
 /* widget-our-service */
@@ -1540,12 +1728,16 @@
 
 .widget-project-1 .widget-project-1-item .icon-arrow-right2 {
     position: absolute;
-    bottom: 0;
+    bottom: -54px;
     right: 0;
     font-size: 16px;
     padding: 19px;
     background-color: #C0F8E8;
     z-index: 20;
+}
+
+.widget-project-1-item:hover .icon-arrow-right2 {
+    bottom: 0;
 }
 
 .widget-project-1 .widget-project-1-item .icon-arrow-right2:hover {
@@ -1892,7 +2084,7 @@
     border-radius: 20px 0 0 0;
     opacity: 0;
     visibility: hidden;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .widget-our-team .widget-social a {
@@ -1908,11 +2100,13 @@
 .widget-our-team .widget-slide-style1 .swiper-button-prev {
     left: -160px;
     top: 53%;
+    border: 2px solid #C0F8E8;
 }
 
 .widget-our-team .widget-slide-style1 .swiper-button-next {
     left: -80px; 
     top: 53%;
+    border: 2px solid #C0F8E8;
 }
 
 /* widget-blog-update */
@@ -2704,209 +2898,3 @@
 	width: 8px;
 }
 
-/* slider-home-2 */
-.parent {
-    width: 100%;
-}
-
-.slider {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-
-.page-title-home2 button {
-  position: absolute;
-  z-index: 50;
-  width: 67px;
-  height: 67px;
-  overflow: hidden;
-  background: transparent;
-  cursor: pointer;
-  border: 2px solid #042181;
-}
-button:focus {
-  outline-width: 0;
-}
-
-
-.right {
-    right: 52px;
-    top: 293px;
-    border: 1px solid #849494;
-    background-color: transparent;
-    transition: 0.5s;
-}
-.right:hover {
-background-color: #042181;
-}
-
-.left {
-    top: 293px;
-    left: 70px;
-    border: 1px solid #849494;
-    background-color: transparent;
-    transition: 0.5s;
-}
-.left:hover {
-background-color: #042181;
-}
-
-svg {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-  }
-
-circle {
-  stroke: #fff;
-  fill: none;
-  transition: 0.3s;
-}
-
-#svg1 circle {
-  transition-timing-function: linear;
-}
-
-#svg2 circle {
-  transition-timing-function: linear;
-}
-
-#Capa_1 {
-  position: absolute;
-  width: 12px;
-  height: 20px;
-  transform: translate(-7px, -8px);
-  color: #042181;
-}
-
-#Capa_2 {
-  position: absolute;
-  width: 12px;
-  height: 20px;
-  transform: translate(-9px, -8px);
-  color: #042181;
-}
-
-
-.circle1 {
-  transition-delay: 0.05s;
-}
-
-.circle2 {
-  transition-delay: 0.1s;
-}
-
-.circle3 {
-  transition-delay: 0.15s;
-}
-
-.circle4 {
-  transition-delay: 0.2s;
-}
-
-.circle5 {
-  transition-delay: 0.25s;
-}
-
-.circle6 {
-  transition-delay: 0.3s;
-}
-
-.circle7 {
-  transition-delay: 0.35s;
-}
-
-.circle8 {
-  transition-delay: 0.4s;
-}
-
-.circle9 {
-  transition-delay: 0.45s;
-}
-
-.circle10 {
-  transition-delay: 0.05s;
-}
-
-.circle11 {
-  transition-delay: 0.1s;
-}
-
-.circle12 {
-  transition-delay: 0.15s;
-}
-
-.circle13 {
-  transition-delay: 0.2s;
-}
-
-.circle14 {
-  transition-delay: 0.25s;
-}
-
-.circle15 {
-  transition-delay: 0.3s;
-}
-
-.circle16 {
-  transition-delay: 0.35s;
-}
-
-.circle17 {
-  transition-delay: 0.4s;
-}
-
-.circle18 {
-  transition-delay: 0.45s;
-}
-
-.slide1 {
-  background-image: url(../images/page-title/home-2.jpg);
-}
-
-.slide2 {
-  background-image: url(../images/page-title/home-2.jpg);
-}
-
-.slide3 {
-  background-image: url(../images/page-title/home-2.jpg);
-}
-.slide4 {
-    background-image: url(../images/page-title/home-2.jpg);
-  }
-
-.slide1, .slide2, .slide3 {
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  width: 100%;
-  height: 100%;
-  z-index: 10;
-  transition: 1.4s;
-}
-
-.tran {
-  transform: scale(1.3);
-}
-
-.up1 {
-  z-index: 30;
-}
-
-.up2.upper {
-  z-index: 40;
-}
-
-.steap {
-  stroke-width: 0;
-}
-
-.streak {
-    stroke-width: 260px;
-}

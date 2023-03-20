@@ -456,7 +456,6 @@ color: #a0a0a0;
     border-top: 4px solid #C0F8E8;
     background: #FFFFFF;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
     transition: ease-out 0.3s;
     z-index: 20;
 }
@@ -1004,8 +1003,7 @@ color: #a0a0a0;
 .widget-social a {
     padding: 9px 10px;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 19px;
-    height: 38px;
+    border-radius: 50%;
     color: #FFFFFF;
 }
 
@@ -1205,7 +1203,7 @@ color: #a0a0a0;
 
 .ride-sidebar .connect-online a {
     border: 1px solid #EFEFEF;
-    padding: 11px 13px;
+    padding: 12px 13px;
 }
 
 .ride-sidebar .connect-online a span::before {
@@ -1557,7 +1555,7 @@ color: #a0a0a0;
     position: absolute;
     content: "";
     left: 0;
-    right: 0;
+    right: auto;
     bottom: 0px;
     width: 54px;
     height: 8px;
@@ -1568,6 +1566,8 @@ color: #a0a0a0;
 
 .widget-block-before:hover::after {
     transform: translateX(110px);
+    /* right: 0;
+    left: auto; */
 }
 
 .blog .main-content-wrap .widget-post {
@@ -2803,12 +2803,14 @@ color: #a0a0a0;
     top: -117px;
     left: auto;
     right: 332px;
+    border: 2px solid #C0F8E8;
 }
 
 .home-03 .widget-project .widget-slide-style1 .swiper-button-next {
     top: -117px;
     left: auto;
     right: 252px;
+    border: 2px solid #C0F8E8;
 }
 
 .home-03 .widget-counter-wrap {
@@ -3492,13 +3494,13 @@ color: #a0a0a0;
 }
 
 .testimonials .widget-business-customers .widget-slide-style1 .swiper-button-next {
-    top: 36%;
+    top: 37.4%;
     left: -80px;
 }
 
 .testimonials .widget-business-customers .widget-slide-style1 .swiper-button-prev {
     left: -160px;
-    top: 36%;
+    top: 37.4%;
 }
 
 .testimonials .widget-testimonial-item {
@@ -3698,6 +3700,8 @@ color: #a0a0a0;
 
 .widget-filters {
     margin-bottom: 61px;
+    position: relative;
+    z-index: 15;
 }
 
 .widget-filters form {

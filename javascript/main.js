@@ -61,7 +61,7 @@
             })
         }
     }     
-};
+  };
 
   var showsearch = function() {
       $(".icon-show-search").click(function(){

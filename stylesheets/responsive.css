@@ -90,6 +90,10 @@
     .widget-about-us {
         flex-wrap: wrap;
     }
+    .widget-about-us .content .text,
+    .widget-about-us .content .sub-text,
+    .widget-about-us .content .file-download,
+    .widget-about-us .content .widget-signature,
     .widget-about-us .content p,
     .widget-about-us .content ul,
     .widget-about-us .content .phone,
@@ -311,7 +315,7 @@
         margin-right: 1em;
     }
     .page-title-home2 button {
-        top: 85%;
+        display: none;
     }
 }
 
@@ -412,6 +416,12 @@
 }   
 
 /* page-title-home-3 */
+@media (min-width:1400px) {  
+    .page-title-home3 {
+        padding-left: 17px;
+    }
+}
+
 @media (max-width:1200px) {  
     .page-title-home3 .content {
         margin-right: 1em;

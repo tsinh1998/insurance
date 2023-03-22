@@ -2227,9 +2227,10 @@ circle {
 }
 
 .widget-services-we-offer-wrap .content .widget-button {
-    padding: 16px 26px;
     color: #042181;
     background-color: #C0F8E8;
+    border: 1px solid #C0F8E8;
+    padding: 15px 25px;
 }
 
 .widget-services-we-offer-wrap .content .widget-button:hover {
@@ -2238,7 +2239,6 @@ circle {
 }
 
 /* widget-claim-settlement */
-
 .widget-claim-settlement {
     text-align: center;
 }

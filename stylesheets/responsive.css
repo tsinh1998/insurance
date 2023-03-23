@@ -57,18 +57,18 @@
         margin-left: 1em;
         margin-right: 1em;
     }
-}
-@media (max-width:810px) {    
-    .page-title-home1 {
-        background-size: cover;
-        background-position: center;
-    }
     .page-title-home1::before {
         position: absolute;
         content: "";
         width: 100%;
         height: 1018px;
         background-color: rgba(255, 255, 255, 0.75);
+    }
+}
+@media (max-width:810px) {    
+    .page-title-home1 {
+        background-size: cover;
+        background-position: center;
     }
     .page-title-home1 h1 {
         font-size: 60px;
@@ -146,6 +146,11 @@
         width: unset;
     }
 }
+@media (max-width: 1440px) and (min-width: 1400px) {    
+    .home-01 .widget-project-content {  
+        padding-left: 1em;
+    }
+}   
 
 /* widget-choose-us */
 @media (max-width:1400px) {    

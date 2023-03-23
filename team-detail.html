@@ -287,17 +287,17 @@
                     <div class="comment name">
                         <fieldset class="infor-container">
                             <div class="title">Full name</div>
-                            <input type="text" id="author" placeholder="Your name" name="author" aria-required="true">
+                            <input type="text" id="author" placeholder="Your name" name="author" required="true">
                         </fieldset>
                     </div>
                     <div class="comment email-number">
                         <fieldset class="infor-container">
                             <div class="title">Email address</div>
-                            <input type="text" id="email" placeholder="e.g.john@gmail.com" name="email" aria-required="true">
+                            <input type="text" id="email" placeholder="e.g.john@gmail.com" name="email" required="true">
                         </fieldset>
                         <fieldset class="infor-container">
                             <div class="title">Phone</div>
-                            <input type="text" id="phone" placeholder="123456789" name="number" aria-required="true">
+                            <input type="text" id="phone" placeholder="123456789" name="number" required="true">
                         </fieldset>
                     </div>
                     <div class="select">
@@ -405,23 +405,20 @@
                                 <div class="comment-wrap-input">
                                     <div class="comment name-number">
                                         <fieldset class="infor-container">
-                                            <input type="text" id="author" placeholder="Full name" name="author" aria-required="true">
+                                            <input pattern="[A-Za-z].{1,}" type="text" id="author" placeholder="Full name" name="author" required="true">
                                         </fieldset>
                                         <fieldset class="infor-container">
-                                            <input type="text" id="phone" placeholder="Your phone" name="number" aria-required="true">
+                                            <input pattern="[0-9].{8,}" type="text" id="phone" placeholder="Your phone" name="number" required="true">
                                         </fieldset>
                                     </div>
                                     <div class="select">
-                                        <div class="nice-select wide" tabindex="0">
-                                            <span class="current">Choose the service to consult</span>
-                                            <ul class="list">
-                                                <li data-value="Nothing" data-display="Select" class="option selected">Choose the service to consult</li>
-                                                <li data-value="1" class="option">Life insurance</li>
-                                                <li data-value="2" class="option">Car insurance </li>
-                                                <li data-value="3" class="option">Home insurance</li>
-                                                <li data-value="4" class="option">Health Insurance</li>
-                                            </ul>
-                                        </div>
+                                        <select class="wide">
+                                            <option value="default" selected="">Choose the service to consult</option>
+                                            <option value="1">Life insurance</option>
+                                            <option value="2">Car insurance</option>
+                                            <option value="3">Home insurance</option>
+                                            <option value="4">Health Insurance</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-submit">

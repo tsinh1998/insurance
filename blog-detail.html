@@ -368,11 +368,11 @@
                         <div class="comment-wrap-input">
                             <fieldset class="infor-container">
                                 Full name
-                                <input type="text" id="author" placeholder="Your Name" name="author" aria-required="true">
+                                <input type="text" id="author" placeholder="Your Name" name="author" required="true">
                             </fieldset>
                             <fieldset class="infor-container">
                                 Email address
-                                <input type="text" id="mail" placeholder="Your Mail" name="mail" aria-required="true">
+                                <input type="text" id="mail" placeholder="Your Mail" name="mail" required="true">
                             </fieldset>
                         </div>
                         <div class="comment-content">
@@ -566,22 +566,24 @@
                 </div>
             </div>
         </div>     
-        <div class="newsletter">
-            <div class="widget-newsletter">
-                <h3 class="newsletter-title">Newsletter</h3>
-                <div class="newsletter-note">Subscribe to our newsletter to receive our latest news updates</div>
-                <form action="#">
-                    <div class="comment-wrap-input">
-                        <fieldset class="infor-container">
-                            <input type="text" id="mail" placeholder="Your email address" name="mail" aria-required="true">
-                        </fieldset>
-                    </div>
-                    <p class="form-submit">
-                        <span class="wrap-input-submit">
-                            <button><span class="icon-sent"></span></button>
-                        </span>
-                    </p>
-                </form>
+        <div class="tf-section section-newsletter">
+            <div class="newsletter">
+                <div class="widget-newsletter">
+                    <h3 class="newsletter-title">Newsletter</h3>
+                    <div class="newsletter-note">Subscribe to our newsletter to receive our latest news updates</div>
+                    <form action="#">
+                        <div class="comment-wrap-input">
+                            <fieldset class="infor-container">
+                                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" id="mail" placeholder="Your email address" name="mail" required="true">
+                            </fieldset>
+                        </div>
+                        <p class="form-submit">
+                            <span class="wrap-input-submit">
+                                <button><span class="icon-sent"></span></button>
+                            </span>
+                        </p>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -666,23 +668,20 @@
                                 <div class="comment-wrap-input">
                                     <div class="comment name-number">
                                         <fieldset class="infor-container">
-                                            <input type="text" id="author" placeholder="Full name" name="author" aria-required="true">
+                                            <input pattern="[A-Za-z].{1,}" type="text" id="author" placeholder="Full name" name="author" required="true">
                                         </fieldset>
                                         <fieldset class="infor-container">
-                                            <input type="text" id="phone" placeholder="Your phone" name="number" aria-required="true">
+                                            <input pattern="[0-9].{8,}" type="text" id="phone" placeholder="Your phone" name="number" required="true">
                                         </fieldset>
                                     </div>
                                     <div class="select">
-                                        <div class="nice-select wide" tabindex="0">
-                                            <span class="current">Choose the service to consult</span>
-                                            <ul class="list">
-                                                <li data-value="Nothing" data-display="Select" class="option selected">Choose the service to consult</li>
-                                                <li data-value="1" class="option">Life insurance</li>
-                                                <li data-value="2" class="option">Car insurance </li>
-                                                <li data-value="3" class="option">Home insurance</li>
-                                                <li data-value="4" class="option">Health Insurance</li>
-                                            </ul>
-                                        </div>
+                                        <select class="wide">
+                                            <option value="default" selected="">Choose the service to consult</option>
+                                            <option value="1">Life insurance</option>
+                                            <option value="2">Car insurance</option>
+                                            <option value="3">Home insurance</option>
+                                            <option value="4">Health Insurance</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="form-submit">

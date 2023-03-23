@@ -2724,6 +2724,10 @@ color: #a0a0a0;
     background: #C0F8E8;
 }
 
+.home-03 .widget-choose-us .widget-choose-us-item:hover .image {
+    border: 2px solid #C0F8E8;
+}
+
 /* widget-choose-us */
 .home-03 .choose-us {
     padding: 100px 0 97px;

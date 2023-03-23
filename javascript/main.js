@@ -633,6 +633,7 @@
 
   // Dom Ready
     $(function() { 
+      preload();
     headerFixed();
     showsearch();
     btnmenu();
@@ -653,7 +654,7 @@
     ranger();
     dropOptionForm();
     parent();
-    preload();
+    
   });
 
 })(jQuery);

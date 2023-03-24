@@ -2948,7 +2948,7 @@ color: #a0a0a0;
 
 .home-03 .widget-counter-item p {
     color: #4F556A;
-    width: 316px;
+    max-width: 316px;
     margin: auto;
 }
 
@@ -3504,11 +3504,16 @@ color: #a0a0a0;
     line-height: 22px;
     color: #4F556A;
     margin-bottom: 4px;
-    list-style: inside circle;
+    padding-left: 9px;
+    position: relative;
 }
 
-.team-detail .infor .infor-item ul li::marker {
-    margin-right: 3px;
+.team-detail .infor .infor-item ul li::after {
+    position: absolute;
+    content: ".";
+    font-size: 22px;
+    left: 0;
+    top: -6px;
 }
 
 .team-detail .infor .infor-item .widget-social a {

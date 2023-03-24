@@ -736,7 +736,7 @@
     background-color: #042181;
     border-radius: 150px 0px 0px 0px;
     display: flex;
-    gap: 40px;
+    gap: 20px 40px;
     position: relative;
     z-index: 5;
 }

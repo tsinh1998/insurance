@@ -260,7 +260,7 @@
                                         <button type="submit" class="widget-block-search-1-button">
                                             <span class="icon-search"></span>
                                         </button>
-                                        <input type="search" class="widget-block-search-1-input " placeholder="Search help acticles..." required="">
+                                        <input type="search" class="widget-block-search-1-input" placeholder="Search help acticles..." required="true">
                                     </div>
                                 </form>
                             </div>
@@ -591,10 +591,10 @@
                                 <div class="comment-wrap-input">
                                     <div class="comment name-number">
                                         <fieldset class="infor-container">
-                                            <input pattern="[A-Za-z].{1,}" type="text" id="author" placeholder="Full name" name="author" required="true">
+                                            <input pattern="[A-Za-z\s]*" type="text" placeholder="Full name" name="author" required="true">
                                         </fieldset>
                                         <fieldset class="infor-container">
-                                            <input pattern="[0-9].{8,}" type="text" id="phone" placeholder="Your phone" name="number" required="true">
+                                            <input pattern="[+0-9].{8,}" type="text" placeholder="Your phone" name="number" required="true">
                                         </fieldset>
                                     </div>
                                     <div class="select">

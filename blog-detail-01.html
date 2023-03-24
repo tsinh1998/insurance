@@ -361,11 +361,11 @@
                         <div class="comment-wrap-input">
                             <fieldset class="infor-container">
                                 Full name
-                                <input type="text" id="author" placeholder="Your Name" name="author" required="true">
+                                <input type="text" pattern="[A-Za-z\s]*" placeholder="Your Name" name="author" required="true">
                             </fieldset>
                             <fieldset class="infor-container">
                                 Email address
-                                <input type="text" id="mail" placeholder="Your Mail" name="mail" required="true">
+                                <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="Your Mail" name="mail" required="true">
                             </fieldset>
                         </div>
                         <div class="comment-content">
@@ -457,7 +457,7 @@
                     <form action="#">
                         <div class="comment-wrap-input">
                             <fieldset class="infor-container">
-                                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" id="mail" placeholder="Your email address" name="mail" required="true">
+                                <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="text" placeholder="Your email address" name="mail" required="true">
                             </fieldset>
                         </div>
                         <p class="form-submit">
@@ -551,10 +551,10 @@
                                 <div class="comment-wrap-input">
                                     <div class="comment name-number">
                                         <fieldset class="infor-container">
-                                            <input pattern="[A-Za-z].{1,}" type="text" id="author" placeholder="Full name" name="author" required="true">
+                                            <input pattern="[A-Za-z\s]*" type="text" placeholder="Full name" name="author" required="true">
                                         </fieldset>
                                         <fieldset class="infor-container">
-                                            <input pattern="[0-9].{8,}" type="text" id="phone" placeholder="Your phone" name="number" required="true">
+                                            <input pattern="[+0-9].{8,}" type="text" placeholder="Your phone" name="number" required="true">
                                         </fieldset>
                                     </div>
                                     <div class="select">

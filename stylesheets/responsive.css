@@ -245,6 +245,11 @@
         clip-path: none;
         margin-bottom: -286px;
     }  
+    .home-01 .widget-get-quote .get-quote-box {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+    }
     .widget-get-quote .get-quote-box {
         position: unset;
         margin-bottom: 100px;
@@ -261,9 +266,9 @@
     }
 }
 @media (max-width:1066px) {  
-    .widget-get-quote.style-2 .get-quote-wrap .get-quote-content p,
-    .widget-get-quote.style-2 .get-quote-wrap .get-quote-content {
-        max-width: unset;
+    .widget-get-quote .get-quote-wrap .get-quote-content p,
+    .widget-get-quote .get-quote-wrap .get-quote-content {
+        max-width: unset !important;
     }
 }
 @media (max-width:1000px) {  
@@ -329,7 +334,7 @@
         width: unset;
     }
 }
-@media (max-width:900px) {  
+@media (max-width:650px) {  
     .widget-blog-update .widget-blog-update-wrap {
         flex-wrap: wrap;
     }

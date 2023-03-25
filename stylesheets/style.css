@@ -2290,6 +2290,7 @@ color: #a0a0a0;
 
 .home-01 .widget-blog-update .widget-post {
     background-color: #FFFFFF;
+    flex-direction: column;
 }
 
 .home-01 .widget-blog-update .widget-post .all-content .title {

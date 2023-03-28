@@ -75,7 +75,11 @@
         line-height: 70px;
     }
 }
-
+@media (max-width:425px) {    
+    .main-title {
+        font-size: 35px;
+    }
+}
 /* widget-service */
 @media (min-width: 750px) and (max-width: 1400px) {    
     .home-01 .widget-service-wrap {
@@ -299,6 +303,12 @@
 @media (max-width:1000px) {  
     .get-quote-wrap {
         padding-top: 230px;
+    }
+}
+@media (max-width:968px) {  
+    .widget-get-quote.style-3 {
+        padding-top: 170px;
+        padding-bottom: 0;
     }
 }
 @media (max-width:550px) {  

@@ -743,7 +743,7 @@
 
 .widget-counter-item {
     padding: 0px 22px;
-    width: 715px;
+    width: 100%;
 }
 
 .widget-counter-item .number-wrap {
@@ -858,7 +858,6 @@
     border: 3px solid #FFFFFF;
     padding: 62px 29px 73px;
     box-shadow: 16px -16px 40px rgba(255, 255, 255, 0.8), 16px 4px 64px rgba(0, 0, 0, 0.16);
-    width: 100%;
     max-width: 538px;
 }
 
@@ -876,7 +875,6 @@
 }
 
 .get-quote-box .tab-container .tabs button {
-    min-width: 92px;
     padding: 10px;
     font-family: 'Raleway',sans-serif;
     font-weight: 900;
@@ -1533,10 +1531,11 @@ circle {
 
 .widget-service-1-item .content {
     max-width: 680px;
+    width: 50%;
 }
 
-.widget-service-1-item .poster {
-    border-radius: 285px;
+.widget-service-1-item .poster img {
+    border-radius: 50%;
     overflow: hidden;
 }
 
@@ -2616,6 +2615,12 @@ circle {
     width: 100%;
 }
 
+.widget-accordion-2 .accordion-items-2 .list-2 .item,
+.widget-accordion-1 .accordion-items-1 .list-1 .item,
+.widget-accordion .accordion-items .list .item {
+    margin-bottom: 20px;
+}
+
 .widget-accordion-2 .accordion-items-2 .list-2 .accordion-heading-2,
 .widget-accordion-1 .accordion-items-1 .list-1 .accordion-heading-1,
 .widget-accordion .accordion-items .list .accordion-heading {
@@ -2624,7 +2629,6 @@ circle {
     padding: 20px;
     padding-right: 50px;
     background-color: #F8F8F8;
-    margin-bottom: 20px;
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -2663,7 +2667,6 @@ circle {
     padding: 20px;
     padding-top: 30px;
     border: 1px solid #EFEFEF;
-    margin-top: -20px;
     margin-bottom: 20px;
     font-family: 'Hind',sans-serif;
     font-weight: 400;

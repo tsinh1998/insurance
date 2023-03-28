@@ -2247,7 +2247,7 @@ color: #a0a0a0;
     border-radius: 0 150px 0 0;
 }
 
-.widget-get-quote.style-3.widget-get-quote .get-quote-inner {
+.widget-get-quote.style-3 .get-quote-inner {
     background-image: none;
     clip-path: none;
 }
@@ -2280,6 +2280,7 @@ color: #a0a0a0;
 }
 
 .widget-get-quote.style-3 .get-quote-box .tab-container .tabs button {
+    width: 25%;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -2460,11 +2461,11 @@ color: #a0a0a0;
 }
 
 /* widget-our-service-item */
-.home-02 .widget-our-service-item {
+.widget-our-service.style-1 .widget-our-service-item {
     position: relative;
 }
 
-.home-02 .widget-our-service-item::before {
+.widget-our-service.style-1 .widget-our-service-item::before {
     position: absolute;
     content: "";
     top: 49%;

@@ -221,14 +221,13 @@
 }
 
 /* widget-get-quote */
-@media (max-width:1500px) {    
-    .widget-get-quote .get-quote-box {
-        bottom: 0;
-        top: unset;
-        right: 1em;
-    }
+@media (max-width:1200px) {    
     .widget-get-quote.style-2 .get-quote-wrap .get-quote-poster {
         display: none;
+    }
+    .widget-get-quote.style-2 .get-quote-wrap .get-quote-content {
+        margin: 0;
+        max-width: unset;
     }
 }
 @media (max-width:1400px) {    
@@ -236,6 +235,10 @@
     .get-quote-wrap .get-quote-content > p {
         margin-right: 1em;
         margin-left: 1em;
+    }
+    .widget-get-quote.style-2 .get-quote-box {
+        margin-right: 1em;
+        width: 50%;
     }
     .widget-get-quote.style-3 .get-quote-wrap .get-quote-content > * {
         margin: 0;
@@ -256,7 +259,7 @@
     }
     .get-quote-wrap .phone-number,
     .get-quote-wrap .get-quote-content p,
-        .get-quote-wrap .calling {
+    .get-quote-wrap .calling {
         margin-left: 1em;
         margin-right: 1em;
     }
@@ -272,21 +275,25 @@
         margin-bottom: 100px;
         
     }
-    .widget-get-quote.style-2 .get-quote-wrap .get-quote-content {
-        margin: 0;
-    }
-    .widget-get-quote.style-2 .get-quote-box {
-        margin-top: 100px;
-    }
-    .widget-get-quote.style-2 .get-quote-wrap {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
 }
 @media (max-width:1066px) {  
     .widget-get-quote .get-quote-wrap .get-quote-content p,
     .widget-get-quote .get-quote-wrap .get-quote-content {
         max-width: unset !important;
+    }
+}
+@media (max-width: 800px) {  
+    .widget-get-quote.style-2 .get-quote-wrap .get-quote-content {
+        margin: 0;
+    }
+    .widget-get-quote.style-2 .get-quote-box {
+        margin-left: 1em;
+        margin-right: 1em;
+        width: 100%;
+    }
+    .widget-get-quote.style-2 .get-quote-wrap {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 @media (max-width:1000px) {  
@@ -442,7 +449,7 @@
 }
 
 /* widget-get-quote */
-@media (max-width:1100px) {  
+@media (max-width:920px) {  
     .widget-get-quote.style-1 .get-quote-wrap {
         flex-wrap: wrap;
         align-items: flex-start;

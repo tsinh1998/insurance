@@ -2452,7 +2452,6 @@ color: #a0a0a0;
 }
 
 .widget-get-quote.style-1 .get-quote-box {
-    position: unset;
     box-shadow: none;
     padding: 40px 50px 85px 80px;
     max-width: 600px;
@@ -2997,7 +2996,7 @@ color: #a0a0a0;
     margin: auto;
 }
 
-.home-03 .widget-get-quote::before {
+.widget-get-quote.style-boder::before {
     position: absolute;
     content: "";
     height: 100%;
@@ -3011,10 +3010,11 @@ color: #a0a0a0;
 .widget-get-quote.style-2 .get-quote-wrap {
     padding: 0;
     margin-bottom: 100px;
+    padding-top: 28px;
 }
 
 .widget-get-quote.style-2 .get-quote-wrap .get-quote-content {
-    padding-top: 100px;
+    padding-top: 72px;
     margin-right: -100px;
 }
 
@@ -3024,16 +3024,16 @@ color: #a0a0a0;
 
 .widget-get-quote.style-2 .get-quote-wrap .get-quote-poster {
     max-width: 514px;
-    padding-top: 28px;
+    margin-right: -80px;
 }
 
 .widget-get-quote.style-2 .get-quote-box {
-    top: 100px;
-    right: 251px;
     padding: 0;
+    margin-top: 72px;
     border-radius: 0;
     max-width: 531px;
     border: none;
+    background: transparent;
 }
 
 .widget-get-quote.style-2 .get-quote-box .tab-container .tabs {

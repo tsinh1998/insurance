@@ -782,6 +782,17 @@ color: #a0a0a0;
     border-top: 1px solid #D1D1D18F;
 }
 
+#mainnav_canvas .menu-item-has-children .icon-arrow-down {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 5px;
+}
+
+#mainnav_canvas .menu-item-has-children.active .icon-arrow-down {
+    transform: rotate(180deg);
+}
+
 /* Footer 
 ----------------------------------------------------- */
 .footer {
@@ -2858,24 +2869,22 @@ color: #a0a0a0;
 }
 
 /* brand */
-.home-03 .brand {
-    width: 100%;
+.widget-brand {
     max-width: 1160px;
     margin: auto;
     text-align: center;
     margin-bottom: 100px;
 }
 
-.home-03 .brand-wrap {
+.widget-brand-wrap {
     display: flex;
-    gap: 40px;
+    gap: 0 40px;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.home-03 .brand img {
+.widget-brand img {
     width: 200px;
-    height: 90px;
 }
 
 .home-03 .widget-counter {
@@ -3038,7 +3047,7 @@ color: #a0a0a0;
 
 .widget-get-quote.style-2 .get-quote-box .tab-container .tabs {
     background-color: #FFFFFF;
-    gap: 0;
+    gap: 20px 0;
     padding: 0;
     margin-bottom: 30px;
 }

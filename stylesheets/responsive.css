@@ -61,7 +61,7 @@
         position: absolute;
         content: "";
         width: 100%;
-        height: 1018px;
+        height: 100%;
         background-color: rgba(255, 255, 255, 0.75);
     }
 }
@@ -468,6 +468,11 @@
     .widget-get-quote.style-1 .get-quote-box {
         margin-bottom: 0;
         padding: 62px 29px 73px;
+        width: 100%;
+        max-width: unset;
+    }
+    .widget-get-quote.style-1 .widget-request-quote-form form {
+        width: 100%;
     }
     .widget-get-quote.style-1 .get-quote-wrap .get-quote-content {
         padding-top: 0;
@@ -476,6 +481,10 @@
 }
 
 @media (max-width:600px) {  
+    .get-quote-box .tab-container {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
     .widget-get-quote.style-1 .get-quote-box .tabs button {
         width: 100%;
     }
@@ -483,12 +492,18 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .get-quote-box .tab-container {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
     .widget-get-quote.style-1 .get-quote-wrap .get-quote-content {
         max-width: unset;
+    }
+    .widget-get-quote.style-2 .get-quote-box .tab-container {
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .widget-get-quote.style-3 .get-quote-box .tab-container {
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
@@ -820,6 +835,18 @@
     }
     .widget-more-news .inner {
         flex-wrap: wrap;
+    }
+}
+
+/* brand */
+@media (max-width: 768px) { 
+    .widget-brand img {
+        width: 26%;
+    }
+}
+@media (max-width: 375px) { 
+    .widget-brand img {
+        width: 22%;
     }
 }
 

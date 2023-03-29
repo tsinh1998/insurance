@@ -21,6 +21,7 @@
   ranger
   dropOptionForm
   parent
+  retinaLogos
   preload
 
 */
@@ -623,6 +624,14 @@
     } 
   }
 
+  var retinaLogos = function() {
+    var retina = window.devicePixelRatio > 1 ? true : false;
+      if(retina) {
+          $('.header-mobile .logo').find('img').attr({src:'../images/logox2.png',width:'137px',height:'50px'});
+          $('.footer .footer-bottom .logo-bottom').find('img').attr({src:'../images/logo-footerx2.png',width:'136px',height:'51px'});
+      }
+  };  
+
   var preload = function() {
     $(window).on('load', function() {
       $('#preload').delay(1500).fadeOut('fast', function() {
@@ -633,30 +642,29 @@
 
   // Dom Ready
     $(function() { 
+      headerFixed();
+      showsearch();
+      btnmenu();
+      dropdown();
+      swiper1();
+      swiper2();
+      swiper3();
+      swiper31();
+      swiper4();
+      swiper41();
+      swiper5();
+      swiper6();
+      partners();
+      accordion();
+      goTop();
+      counter();
+      tabs();
+      ranger();
+      dropOptionForm();
+      parent();
+      retinaLogos();
       preload();
-    headerFixed();
-    showsearch();
-    btnmenu();
-    dropdown();
-    swiper1();
-    swiper2();
-    swiper3();
-    swiper31();
-    swiper4();
-    swiper41();
-    swiper5();
-    swiper6();
-    partners();
-    accordion();
-    goTop();
-    counter();
-    tabs();
-    ranger();
-    dropOptionForm();
-    parent();
-    
-  });
-
+    });
 })(jQuery);
 
 

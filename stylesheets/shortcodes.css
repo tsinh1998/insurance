@@ -73,11 +73,13 @@
     padding-right: 17px;
     overflow-x: hidden;
     overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .preload-icon {
-    color: #fff;
-    margin-top: 20%;
+    position: relative;
+    top: 45%;
 }
 
 /* GoTop Button
@@ -161,6 +163,7 @@
 
 /* page-title-home1 */
 .page-title-home1 {
+    position: relative;
     background-image: url(../images/page-title/pt.png);
     background-position: 95.4% 108px;
     background-repeat: no-repeat;

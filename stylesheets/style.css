@@ -39,6 +39,7 @@ html {
 }
 
 body {
+    overflow: hidden;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;

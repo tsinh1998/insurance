@@ -33,6 +33,10 @@
     
 */
 
+@import url(animate.css);
+@import url(animate.min.css);
+@import url(nice-select.css);
+@import url(swiper-bundle.min.css);
 
 .tf-container {
     position:relative;
@@ -54,32 +58,79 @@
     padding-right: 20px;
 }
 
-/* preloading */
-.preloading {
-    overflow: hidden;
-}
-
-.preload-container {
+/* preload */
+#preload {
     width: 100%;
     height: 100%;
-    background: #fff;
+    background-color: #fff;
     position: fixed;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
-    z-index: 99999999999;
-    display: block;
-    padding-right: 17px;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    z-index: 9999999;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.preload-icon {
-    position: relative;
-    top: 45%;
+#preload .preloading {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+
+#preload .preloading span, 
+#preload .preloading span:before, 
+#preload .preloading span:after {
+    content: "";
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #042181;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#preload .preloading span {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-left-color: transparent;
+    -webkit-animation: effect-2 2s infinite linear;
+    -moz-animation: effect-2 2s infinite linear;
+    -ms-animation: effect-2 2s infinite linear;
+    -o-animation: effect-2 2s infinite linear;
+    animation: effect-2 2s infinite linear;
+}
+
+#preload .preloading > span:before {
+    width: 75%;
+    height: 75%;
+    border-right-color: transparent;
+}
+
+#preload .preloading > span:after {
+    width: 50%;
+    height: 50%;
+    border-bottom-color: transparent;
 }
 
 /* GoTop Button

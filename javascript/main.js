@@ -232,13 +232,13 @@
       }
   };  
 
-  var preload = function() {
-    $(window).on('load', function() {
-      $('#preload').delay(1500).fadeOut('fast', function() {
-              $('#preload').remove();
-          })
-      })
-  }
+  var preload = function () {
+    $("#preload").fadeOut(3000,function(){
+      setTimeout(function() {
+          $("#preload").remove();
+      });
+  });
+  };
 
   // Dom Ready
     $(function() { 

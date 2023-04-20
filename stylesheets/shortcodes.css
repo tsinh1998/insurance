@@ -215,7 +215,7 @@
 /* page-title-home1 */
 .page-title-home1 {
     position: relative;
-    background-image: url(../images/page-title/pt.png);
+    background-image: url(../images/page-title/bg1.jpg);
     background-position: 95.4% 108px;
     background-repeat: no-repeat;
 }
@@ -1701,6 +1701,7 @@ circle {
 
 .widget-project-1 .swiper-slide {
     padding-top: 50px;
+    z-index: 1;
 }
 
 .widget-project-1 .icon {

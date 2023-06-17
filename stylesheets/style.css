@@ -374,6 +374,8 @@ color: #a0a0a0;
 .header-wrap {
     display: flex;
     align-items: center;
+    margin-left: 5.255%;
+    margin-right: 4.375%;
 }
 
 .header-ct-left,
@@ -383,15 +385,10 @@ color: #a0a0a0;
 }
 
 /* header-ct-left */
-.header-ct-left {
-    padding-left: 100px;
-}
 
 .header-ct-left .logo {
     padding-right: 80px;
 }
-
-
 
 /* header-ct-center */
 .header-ct-center {
@@ -459,12 +456,14 @@ color: #a0a0a0;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
     transition: ease-out 0.3s;
     z-index: 20;
+    pointer-events: none;
 }
 
 #mainnav ul.menu > li:hover ul.sub-menu {
     opacity: 1;
     visibility: visible;
     top: 100%;
+    pointer-events: all;
 }
 
 .mainnav ul.sub-menu li {
@@ -525,7 +524,6 @@ color: #a0a0a0;
 
 /* header-ct-right */
 .header-ct-right {
-    padding-right: 84px;
     gap: 30px;
     align-items: center;
 }
@@ -628,7 +626,7 @@ color: #a0a0a0;
     width: 100%;
     max-width: 1920px;
     margin: auto;
-    padding: 12px 84px 12px 100px;
+    padding: 12px 4.375% 12px 5.255%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -701,6 +699,9 @@ color: #a0a0a0;
 
 #header-mobile .header-wrap .btn-menu {
     position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
 }
 
 #header-mobile .header-wrap .btn-menu span {
@@ -710,6 +711,7 @@ color: #a0a0a0;
     width: 24px;
     height: 2px;
     right: 0;
+    top: 50%;
 }
 
 #header-mobile .header-wrap .btn-menu::before {
@@ -719,7 +721,7 @@ color: #a0a0a0;
     width: 24px;
     height: 2px;
     right: 0;
-    top: -8px;
+    top: 17%;
 }
 
 #header-mobile .header-wrap .btn-menu::after {
@@ -729,7 +731,7 @@ color: #a0a0a0;
     width: 24px;
     height: 2px;
     right: 0;
-    top: 8px;
+    top: 83%;
 }
 
 .canvas-nav-wrap .overlay-canvas-nav {
@@ -783,11 +785,11 @@ color: #a0a0a0;
 #mainnav_canvas ul li a {
     font-family: "Raleway",sans-serif;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 14px;
     display: inline-block;
     width: 100%;
     height: auto;
-    padding: 12px 50px 12px 25px;
+    padding: 12px 50px 12px 15px;
     text-align: left;
     color: #191919;
 }
@@ -808,7 +810,7 @@ color: #a0a0a0;
 }
 
 #mainnav_canvas ul.sub-menu li {
-    padding-left: 30px;
+    padding-left: 15px;
     border-top: 1px solid #D1D1D18F;
 }
 
@@ -1051,10 +1053,12 @@ color: #a0a0a0;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100% 470px;
+    background-color: #042181;
+    background-blend-mode: soft-light;
 }
 
 .blog .page-title {
-    background-image: url(../images/page-title/blog.jpg);
+    background-image: url(../images/page-title/blog.png);
 }
 
 .page-title .page-title-container {
@@ -1620,7 +1624,7 @@ color: #a0a0a0;
 -------------------------------------*/
 
 .blog-01 .page-title {
-    background-image: url(../images/page-title/blog.jpg);
+    background-image: url(../images/page-title/blog.png);
 }
 
 .blog-01 .list-post {
@@ -1647,7 +1651,7 @@ color: #a0a0a0;
 /* Blog-02 
 -------------------------------------*/
 .blog-02 .page-title {
-    background-image: url(../images/page-title/blog.jpg);
+    background-image: url(../images/page-title/blog.png);
 }
 
 .blog-02 .main-content-wrap .widget-post {
@@ -1677,7 +1681,7 @@ color: #a0a0a0;
 /* Blog-detail 
 -------------------------------------*/
 .blog-detail .page-title {
-    background-image: url(../images/page-title/blog.jpg);
+    background-image: url(../images/page-title/blog.png);
     z-index: -1;
 }
 
@@ -2050,8 +2054,8 @@ color: #a0a0a0;
     line-height: 23px;
 }
 
-.widget-more-news .inner .widget-post > img {
-    border-radius: 27px 0px 0px 0px;
+.widget-more-news .inner .widget-post > .image img {
+    border-radius: 60px 0px 0px 0px;
 }
 
 /* widget-newsletter */
@@ -2155,7 +2159,7 @@ color: #a0a0a0;
 /* Contact-us
 -------------------------------------*/
 .contact-us .page-title {
-    background-image: url(../images/page-title/blog.jpg);
+    background-image: url(../images/page-title/blog.png);
 }
 
 .contact-us .widget-request-quote-form.style-1 {
@@ -2712,10 +2716,6 @@ color: #a0a0a0;
 .header-home-03 .sticky-area-wrap.fixed-show #menu-primary-menu > li > a span::before,
 .header-home-03 .sticky-area-wrap.fixed-show #menu-primary-menu > li > a {
     color: #042181;
-}
-
-.header-home-03 .header-ct-right {
-    padding-right: 81px;
 }
 
 .header-home-03 .sub-header {
@@ -3283,7 +3283,7 @@ color: #a0a0a0;
 --------------------------------------------- */
 /* page-title */
 .about-us-page .page-title {
-    background-image: url(../images/page-title/about-us.jpg);
+    background-image: url(../images/page-title/about-us.png);
 }
 
 /* widget-about-us */
@@ -3457,7 +3457,7 @@ color: #a0a0a0;
 /* our-team-page
 -------------------------------------- */
 .our-team-page .page-title {
-    background-image: url(../images/page-title/our-team.jpg);
+    background-image: url(../images/page-title/our-team.png);
 }
 
 /* widget-our-team */
@@ -3501,7 +3501,7 @@ color: #a0a0a0;
 /* team-detail 
 ------------------------------------------*/
 .team-detail .page-title {
-    background-image: url(../images/page-title/team-detail.jpg);
+    background-image: url(../images/page-title/team-detail.png);
 }
 
 .team-detail.main-content {
@@ -3642,7 +3642,7 @@ color: #a0a0a0;
 /* Testimonials
 ------------------------------ */
 .testimonials .page-title {
-    background-image: url(../images/page-title/testimonial.jpg);
+    background-image: url(../images/page-title/testimonial.png);
 }
 
 /* widget-testimonial */
@@ -3757,13 +3757,13 @@ color: #a0a0a0;
 }
 
 .pricing-table .page-title {
-    background-image: url(../images/page-title/testimonial.jpg);
+    background-image: url(../images/page-title/testimonial.png);
 }
 
 /* FAQs
 -----------------------------------*/
 .faqs .page-title {
-    background-image: url(../images/page-title/faq.jpg);
+    background-image: url(../images/page-title/faq.png);
 }
 
 .widget-block-search-1 {
@@ -3891,7 +3891,7 @@ color: #a0a0a0;
 /* Career
 -----------------------------------*/
 .carers .page-title {
-    background-image: url(../images/page-title/carrer.jpg);
+    background-image: url(../images/page-title/carrer.png);
 }
 
 .carers .widget-job {
@@ -4098,7 +4098,7 @@ color: #a0a0a0;
 }
 
 .services-list .page-title {
-    background-image: url(../images/page-title/service.jpg);
+    background-image: url(../images/page-title/service.png);
 }
 
 .services-list > .section-heading {
@@ -4190,7 +4190,7 @@ color: #a0a0a0;
 }
 
 .services-grid .page-title {
-    background-image: url(../images/page-title/service-grid.jpg);
+    background-image: url(../images/page-title/service-grid.png);
 }
 
 .services-grid .widget-service-list {
@@ -4231,9 +4231,11 @@ color: #a0a0a0;
 .services-grid .widget-service-list.style1 {
     max-width: unset;
     background-attachment: fixed;
-    background-image: url(../images/services/background.jpg);
+    background-image: url(../images/services/background.png);
     border-radius: 135px 0 0 0;
     margin-bottom: 100px;
+    background-blend-mode: soft-light;
+    background-color: #042181;
 }
 
 .services-grid .widget-service-list.style1 .widget-service-list-inner {
@@ -4288,7 +4290,7 @@ color: #a0a0a0;
 }
 
 .services-detail .page-title {
-    background-image: url(../images/page-title/service-detail.jpg);
+    background-image: url(../images/page-title/service-detail.png);
 }
 
 .services-detail-wrap {

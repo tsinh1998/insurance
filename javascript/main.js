@@ -232,12 +232,10 @@
       }
   };  
 
-  var preload = function () {
-    $("#preload").fadeOut(3000,function(){
-      setTimeout(function() {
-          $("#preload").remove();
-      });
-  });
+  var preload = function() {        
+    $('#preload').fadeOut('slow',function () {
+        $(this).remove();
+    });
   };
 
   // Dom Ready

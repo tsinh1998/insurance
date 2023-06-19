@@ -23,18 +23,13 @@
   var headerFixed = function() {
     if ( $('header').hasClass('header-fixed') ) {
         var nav = $('.sticky-area-wrap');
-
         if ( nav.length ) {
             var
             offsetTop = nav.offset().top,
             headerHeight = nav.height(),
             injectSpace = $('<div>', {
-                height: headerHeight
-            });
-            if ( $('header').hasClass('header-default') ) {
-                injectSpace.insertAfter(nav)
-            }
-
+              height: headerHeight,
+            }).hide().insertAfter(nav);
             $(window).on('load scroll', function(){
                 if ( $(window).scrollTop() > offsetTop + headerHeight ) {
                     nav.addClass('fixed-hide');
@@ -233,7 +228,7 @@
   };  
 
   var preload = function() {        
-    $('#preload').fadeOut('slow',function () {
+    $('#preload').fadeOut(2000,function () {
         $(this).remove();
     });
   };

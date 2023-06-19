@@ -1437,6 +1437,10 @@ color: #a0a0a0;
     overflow: hidden;
 }
 
+.blog .main-post .widget-post .image img {
+    width: 100%;
+}
+
 .blog .main-post .all-content {
     padding: 30px;
     margin: -98px 80px 0 80px;
@@ -2257,6 +2261,27 @@ color: #a0a0a0;
 .home-01 .section-service {
     padding-top: 100px;
     padding-bottom: 100px;
+    position: relative;
+}
+
+.home-01 .widget-service-item .poster img {
+    border-radius: 50px 100px 0 0;
+}
+
+.home-01 .section-service .icon-bg .icon-1 {
+    position: absolute;
+    z-index: -1;
+    top: 214px;
+    left: 163px;
+    animation: moverightleft 3s linear infinite;
+}
+
+.home-01 .section-service .icon-bg .icon-2 {
+    position: absolute;
+    z-index: -1;
+    top: 80px;
+    right: 200px;
+    animation: moverightleft 3s linear infinite;
 }
 
 .home-01 .section-about-us {
@@ -2418,18 +2443,16 @@ color: #a0a0a0;
     content: url(../images/Decor-1.png);
     top: 30%;
     left: 0;
-    animation: none;
 }
 
 .home-02 .widget-about-us .poster::before{
     position: absolute;
-    display: block !important;
+    display: block ;
     content: url(../images/Ellipse.png);
     top: 47%;
     bottom: auto;
     left: -90px;
     right: auto;
-    animation: none;
 }
 
 .widget-about-us .file-download {
@@ -2605,9 +2628,23 @@ color: #a0a0a0;
 .widget-choose-us.style-1 {
     margin-top: 100px;
     max-width: unset;
-    background-image: url(../images/Decor.png);
-    background-repeat: no-repeat;
-    background-position: 82.3%;
+    position: relative;
+}
+
+.widget-choose-us.style-1 .icon-bg .icon-1 {
+    position: absolute;
+    z-index: -1;
+    top: 26px;
+    right: 260px;
+    animation: moverightleft 3s linear infinite;
+}
+
+.widget-choose-us.style-1 .icon-bg .icon-2 {
+    position: absolute;
+    z-index: -1;
+    top: 13px;
+    right: 175px;
+    animation: moveupdown 3s linear infinite;
 }
 
 .widget-choose-us.style-1 .widget-choose-us-content {
@@ -2876,6 +2913,33 @@ color: #a0a0a0;
 
 .home-03 .widget-claim-settlement {
     padding-bottom: 100px;
+    position: relative;
+}
+
+.home-03 .widget-claim-settlement .icon-bg .icon-1 {
+    position: absolute;
+    z-index: -1;
+    top: 66px;
+    right: 352px;
+    animation: moveupdown 3s linear infinite;
+}
+
+.home-03 .widget-claim-settlement .icon-bg .icon-2 {
+    position: absolute;
+    z-index: -1;
+    top: 140px;
+    left: 180px;
+    animation: moveupdown 3s linear infinite;
+}
+
+.home-03 .widget-claim-settlement .icon-bg .icon-3 {
+    position: absolute;
+    z-index: -1;
+    bottom: 36px;
+    left: 376px;
+    width: 128px;
+    opacity: 0.25;
+    animation: moverightleft 3s linear infinite;
 }
 
 .home-03 .widget-testimonials {
@@ -2941,6 +3005,17 @@ color: #a0a0a0;
     border-radius: 0 0 170px 0;
 }
 
+.home-03 .widget-project::after {
+    position: absolute;
+    content: "";
+    width: 162px;
+    height: 346px ;
+    right: 0;
+    bottom: 112px;
+    z-index: 1;
+    background: linear-gradient(270deg, #FFFFFF 22.01%, rgba(255, 255, 255, 0) 100%);
+}
+
 .home-03 .widget-project-wrap {
     max-width: 1400px;
     margin: auto;
@@ -2958,6 +3033,7 @@ color: #a0a0a0;
 .home-03 .widget-project .widget-project-slide {
     width: calc((100vw - ((100vw - 1400px) / 2 )) - 8px);
 }
+
 
 .home-03 .widget-project .widget-project-slide .swiper {
     margin-right: -115px;
@@ -3232,6 +3308,7 @@ color: #a0a0a0;
     box-shadow: none;
     gap: 0;
     width: auto;
+    height: max-content;
 }
 
 .home-03 .widget-blog-update-wrap > .widget-post .image {

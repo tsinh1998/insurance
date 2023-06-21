@@ -76,6 +76,17 @@
     .icon-bg {
         display: none;
     }
+    .page-title-home1 .content {
+        padding-top: 120px;
+        padding-bottom: 270px;
+    }
+}
+@media (max-width:950px) {
+    .page-title-home1 .image1 {
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
 }
 @media (max-width:810px) {    
     .page-title-home1 {
@@ -85,14 +96,21 @@
     .page-title-home1 h1,
     .page-title-home2 h1,
     .page-title-home3 h1 {
-        font-size: 60px;
-        line-height: 70px;
+        font-size: 55px;
+        line-height: 65px;
     }
 }
 @media (max-width:425px) {    
     .main-title {
         font-size: 40px;
         line-height: 1.2;
+    }
+    .page-title-home1 .content {
+        padding-top: 100px;
+        padding-bottom: 120px;
+    }
+    .page-title-home1 .text a {
+        display: block;
     }
 }
 /* widget-service */
@@ -111,6 +129,10 @@
     }
     .widget-service .widget-service-wrap {
         flex-wrap: wrap;
+    }
+    .widget-service-1::after,
+    .widget-service-1::before {
+        display: none;
     }
 }
 
@@ -158,6 +180,9 @@
         flex-wrap: wrap;
         row-gap: 60px;
     }
+    .about-us-page .widget-about-us-wrap .content {
+        margin-top: 60px;
+    }
     .about-us-page .widget-about-us-wrap .content > * {
         max-width: unset !important;
     }
@@ -177,6 +202,9 @@
         margin-right: 1em;
         margin-left: 1em;
     }
+    .home-03 .widget-project::before {
+        border-radius: 0 0 100px 0;
+    }
 }
 @media (max-width:800px) {    
     .widget-project-content {
@@ -188,6 +216,14 @@
         padding-left: 1em;
     }
 }   
+@media (max-width:800px) {
+    .home-03 .widget-project .widget-project-slide .swiper {
+        margin-right: auto;
+    }
+    .home-03 .widget-project::after {
+        display: none;
+    }
+}
 
 /* widget-choose-us */
 @media (max-width:1400px) {    
@@ -212,7 +248,7 @@
 @media (max-width:750px) {    
     .widget-choose-us .widget-choose-us-item {
         width: 100%;
-        min-height: unset;
+        min-height: unset !important;
     }
 }
 
@@ -244,6 +280,10 @@
         margin-left: 1em;
         margin-right: 1em;
     }
+    .about-us-page .widget-counter.counter-style-1 .widget-counter-wrap {
+        margin-top: 40px;
+        padding-bottom: 80px;
+    }
 }
 
 /* widget-get-quote */
@@ -267,7 +307,8 @@
         width: 50%;
     }
     .widget-get-quote.style-3 .get-quote-wrap .get-quote-content > * {
-        margin: 0;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 @media (max-width:1200px) {  
@@ -331,6 +372,12 @@
     .widget-get-quote.style-3 {
         padding-top: 170px;
         padding-bottom: 0;
+    }
+    .widget-get-quote.style-2 .get-quote-box .tab-container .tabs button:first-child {
+        padding-left: 20px;
+    }
+    .widget-get-quote.style-2 .get-quote-box .tab-container .tabs button:last-child {
+        padding-right: 20px;
     }
 }
 @media (max-width:550px) {  
@@ -560,7 +607,7 @@
         margin-left: 1em;
         margin-right: 1em;
     }
-    .widget-project-1 .widget-swiper-pagination .swiper-pagination {
+    .swiper-pagination {
         display: none;
     }
 }
@@ -572,6 +619,15 @@
 }
 
 /* widget-pricing */
+@media (max-width:1024px) {  
+    .widget-pricing .price {
+        font-size: 50px;
+    }
+    .widget-pricing-item {
+        padding-top: 60px;
+    }
+}   
+
 @media (max-width:992px) {  
     .widget-pricing-item {
         margin-bottom: 40px;
@@ -706,6 +762,9 @@
     .widget-request-quote-wrap .widget-button {
         margin-bottom: 15px;
     }
+    .widget-claim-settlement-item {
+        margin-bottom: 30px;
+    }
 }
 
 /* page-title */
@@ -722,10 +781,27 @@
     }
 }
 
+@media (max-width:950px) {
+    .page-title h1 {
+        font-size: 53px;
+        line-height: 63px;
+    }
+}
+
 /* team-detail */
 @media (max-width:900px) { 
     .team-detail .poster {
         margin-bottom: 0;
+    }
+}
+@media (max-width:500px) {
+    .team-detail .widget-request-quote-form {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .team-detail .infor {
+        padding-right: 1em;
+        padding-left: 1em;
     }
 }
 

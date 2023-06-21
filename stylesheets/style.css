@@ -501,6 +501,7 @@ color: #a0a0a0;
 
 #mainnav .tf-megamenu ul.sub-menu li {
     margin-bottom: 0;
+    position: relative;
 }
 
 #mainnav .tf-megamenu ul.sub-menu li p {
@@ -515,12 +516,25 @@ color: #a0a0a0;
 #mainnav .tf-megamenu ul.sub-menu li img {
     width: 100%;
     transition: 0.5s;
+    position: relative;
 }
 
-#mainnav .tf-megamenu ul.sub-menu li:hover img {
-    box-shadow: 0px 10px 30px rgb(0 0 0 / 5%);
+#mainnav .tf-megamenu ul.sub-menu li p:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 90%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: #101a2c;
+    cursor: pointer;
 }
 
+#mainnav .tf-megamenu ul.sub-menu li:hover p::after {
+    opacity: 0.1;
+}
 
 /* header-ct-right */
 .header-ct-right {
@@ -2260,12 +2274,19 @@ color: #a0a0a0;
 
 .home-01 .section-service {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 85px;
     position: relative;
 }
 
-.home-01 .widget-service-item .poster img {
+.home-01 .widget-service-item{
     border-radius: 50px 100px 0 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    padding-bottom: 15px;
+}
+
+.home-01 .widget-service-item:hover {
+    box-shadow: 0 24px 20px rgb(0 0 2 / 12%);
 }
 
 .home-01 .section-service .icon-bg .icon-1 {
@@ -2530,6 +2551,22 @@ color: #a0a0a0;
 /* widget-our-service-item */
 .widget-our-service.style-1 .widget-our-service-item {
     position: relative;
+    overflow: hidden;
+}
+
+.widget-our-service.style-1 .widget-our-service-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+    bottom: 0;
+    right: 120%;
+    transition: all 0.5s ease;
+}
+
+.widget-our-service.style-1 .widget-our-service-item:hover::after {
+    right: 10%;
 }
 
 .widget-our-service.style-1 .widget-our-service-item::before {
@@ -2683,13 +2720,17 @@ color: #a0a0a0;
 .widget-choose-us.style-1 .widget-choose-us-item {
     width: 100%;
     padding: 30px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    box-shadow: 1px -3px 16px rgb(47 83 109 / 10%);
     border-radius: 60px 0px 0px 0px;
     flex-wrap: wrap;
     background-color: #fff;
     min-height: 372px;
     margin-bottom: 30px;
     align-content: flex-start;
+}
+
+.widget-choose-us.style-1 .widget-choose-us-item:hover {
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 /* widget-counter */
@@ -3055,6 +3096,21 @@ color: #a0a0a0;
     flex-direction: column;
 }
 
+.home-03 .widget-project .widget-project-slide .widget-choose-us-item:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background: linear-gradient(0deg, #C0F8E8 0%, rgba(4, 33, 129, 0) 100%);
+    transition: all 0.5s ease;
+}
+
+.home-03 .widget-project .widget-project-slide .widget-choose-us-item:hover:after {
+    height: 50%;
+}
+
 .home-03 .widget-project .widget-choose-us-item .text {
     margin-top: 0;
 }
@@ -3197,6 +3253,13 @@ color: #a0a0a0;
     margin-bottom: 153px;
     border: none;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.5s ease;
+    border-radius: 0 75px 0 0;
+    overflow: hidden;
+}
+
+.home-03 .widget-project-1 .widget-project-1-item:hover {
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
 }
 
 .home-03 .widget-project-1 .widget-project-1-item img {
@@ -3311,8 +3374,18 @@ color: #a0a0a0;
     height: max-content;
 }
 
+.home-03 .widget-blog-update-wrap .widget-post .image img {
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.home-03 .widget-blog-update-wrap .widget-post:hover .image img {
+    transform: scale(1.1);
+}
+
 .home-03 .widget-blog-update-wrap > .widget-post .image {
     width: 440px;
+    border-radius: 80px 0 0 0;
 }
 
 .home-03 .widget-blog-update-wrap > .widget-post .all-content {
@@ -3340,6 +3413,7 @@ color: #a0a0a0;
 
 .home-03 .widget-blog-update-wrap .list-block .widget-post .image {
     width: auto;
+    border-radius: 30px 0 0 0;
 }
 
 .home-03 .widget-blog-update-wrap .list-block .widget-post .all-content {
@@ -3824,7 +3898,9 @@ color: #a0a0a0;
     margin-right: 20px;
     font-size: 20px;
     color: #4F556A;
-    transform: rotate(180deg);
+    width: 20px;
+    height: 20px;
+    animation: rotate360 2s linear infinite;
 }
 
 /* pricing-table 
@@ -4290,6 +4366,11 @@ color: #a0a0a0;
 
 .services-grid .widget-service-list-wrap .widget-post .image img {
     width: 100%;
+    transition: all 0.5s ease;
+}
+
+.services-grid .widget-service-list-wrap .widget-post:hover .image img {
+    transform: scale(1.1);
 }
 
 .services-grid .widget-service-list-wrap .widget-post .all-content {
